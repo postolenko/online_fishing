@@ -382,7 +382,7 @@ a:active {
 
 .header .row-2 .col {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .header .row-2 .col-1 {
