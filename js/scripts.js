@@ -50,6 +50,35 @@ $(document).ready(function() {
     });
 
 
+    $(function () {
+       
+        $(".sidebar ul li").each(function() {
+
+            if($(this).children("ul").length > 0) {
+                $(this).append('<button type="button" class="show-inner-nav"></button>');
+            }
+
+        });
+
+    });
+
+    // ----------- Sidebar Menu -------------
+
+    $( ".sidebar ul li" ).bind({
+      mouseenter: function() {
+        if($(this).children("ul").length > 0) {
+            $(this).children("ul").stop().slideDown(400);
+        }
+      },
+      mouseleave: function() {
+        if($(this).children("ul").length > 0) {
+            $(this).children("ul").stop().slideUp(400);
+        }
+      }
+    });
+
+    // ----------- Sidebar Menu -------------
+
     function getFooterPosition() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});

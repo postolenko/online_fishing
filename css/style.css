@@ -444,6 +444,43 @@ a:active {
     color: #000000;
     font-weight: 600;
     border-bottom: 1px dashed #dbdedd;
+
+    -webkit-transition-property: color, border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color, border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color, border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color, border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color, border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.header .place:link,
+.header .place:visited {
+    color: #000000;
+    border-bottom: 1px dashed #dbdedd;
+}
+
+.header .place.active,
+.header .place:active {
+    color: #44b2e0;
+    border-bottom: 1px dashed transparent;
+}
+
+.header .place:hover {
+    color: #44b2e0;
+    border-bottom: 1px dashed transparent;
 }
 
 .header .fa-map-marker {
@@ -475,6 +512,40 @@ a:active {
     line-height: 16px;
     font-weight: normal;
     color: #323d4a;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.top-nav li a:link,
+.top-nav li a:visited {
+    color: #323d4a;
+}
+
+.top-nav li a.active,
+.top-nav li a:active {
+    color: #44b2e0;
+}
+
+.top-nav li a:hover {
+    color: #44b2e0;
 }
 
 .sign-list {
@@ -519,6 +590,40 @@ a:active {
     line-height: 16px;
     font-weight: 300;
     color: #323d4a;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.sign-list li a:link,
+.sign-list li a:visited {
+    color: #323d4a;
+}
+
+.sign-list li a.active,
+.sign-list li a:active {
+    color: #44b2e0;
+}
+
+.sign-list li a:hover {
+    color: #44b2e0;
 }
 
 .sign-list li a b {
@@ -808,6 +913,43 @@ a:active {
     font-weight: 500;
     color: #44b2e0;
     border-bottom: 1px dashed #e5e5e5;
+
+    -webkit-transition-property: color, border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color, border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color, border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color, border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color, border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.callback a:link,
+.callback a:visited {
+    color: #44b2e0;
+    border-bottom: 1px solid #f4f7f6;
+}
+
+.callback a.active,
+.callback a:active {
+    color: #81c632;
+    border-bottom: 1px dashed transparent;
+}
+
+.callback a:hover {
+    color: #81c632;
+    border-bottom: 1px dashed transparent;
 }
 
 .header p {
@@ -861,10 +1003,6 @@ a:active {
     padding: 0;
 }
 
-.two-cols-tmpl .row-2 {
-    /*margin: 37px 0;*/
-}
-
 .sidebar {
     background: rgba(255, 255, 255, 1);
     -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, 0.2);
@@ -893,31 +1031,8 @@ a:active {
     position: absolute;
     top: 0;
     left: 100%;
-
-/*    -webkit-transition-property: height, left;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: height, left;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: height, left;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: height, left;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: height, left;
-    transition-duration: .3s;
-    transition-timing-function: ease;*/
 }
 
-.sidebar ul li:hover > ul {
-    display: block;
-}
 
 .sidebar ul li a {
     display: block;
@@ -991,6 +1106,32 @@ a:active {
     border-bottom: 1px solid transparent;
 }
 
+.show-inner-nav {
+    display: block;
+    width: 26px;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.show-inner-nav:before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 16px;
+    background-image: url(../img/right_chewron.png);
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    margin: -9px 0 0 0;
+}
+
 .promo-h-list {
 
 }
@@ -1024,7 +1165,7 @@ a:active {
     color: #323d4a;
 }
 
-.underlie-p {
+.promo-h-list a {
     display: inline-block;
     vertical-align: top;
     margin: 0 0 0 12px;
@@ -1040,6 +1181,45 @@ a:active {
     background-position: 0 90%;
     background-size: 1px 1px;
     text-decoration: none;
+
+    -webkit-transition-property: color, background-image;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color, background-image;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color, background-image;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color, background-image;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color, background-image;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.promo-h-list a:link,
+.promo-h-list a:visited {
+    color: #323d4a;
+    background-image: -webkit-linear-gradient(180deg,#323d4a 0,#323d4a);
+    background-image: -moz-linear-gradient(180deg,#323d4a 0,#323d4a);
+    background-image: linear-gradient(180deg,#323d4a 0,#323d4a);
+}
+
+.promo-h-list a.active,
+.promo-h-list a:active {
+    color: #3d9fc8;
+    background-image: none;
+}
+
+.promo-h-list a:hover {
+    color: #3d9fc8;
+    background-image: none;
 }
 
 .two-cols-tmpl .col-2 {
@@ -1181,14 +1361,46 @@ a:active {
     font-weight: normal;
     color: #44b2e0;
     text-align: center;
-    background-image: -webkit-linear-gradient(180deg,#44b2e0 0,#44b2e0);
-    background-image: -moz-linear-gradient(180deg,#44b2e0 0,#44b2e0);
-    background-image: linear-gradient(180deg,#44b2e0 0,#44b2e0);
-    background-repeat: repeat-x;
-    background-position: 0 90%;
-    background-size: 1px 1px;
+    text-decoration: underline;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.popular-good p:link,
+.popular-good p:visited {
+    color: #44b2e0;
+    text-decoration: underline;
+}
+
+.popular-good p.active,
+.popular-good p:active {
+    color: #81c632;
     text-decoration: none;
 }
+
+.popular-good p:hover {
+    color: #81c632;
+    text-decoration: none;
+}
+
 
 
 /*-- /Section 1 Main Page --*/
@@ -1675,7 +1887,42 @@ a:active {
     font-weight: 700;
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
+
+    -webkit-transition-property: border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
+
+.more-white-link:link,
+.more-white-link:visited {
+    border-bottom: 1px solid #ffffff;
+}
+
+.more-white-link.active,
+.more-white-link:active {
+    border-bottom: 1px solid transparent;
+}
+
+.more-white-link:hover {
+    border-bottom: 1px solid transparent;
+}
+
 
 
 /*-- /Section 3 Main Page --*/
@@ -1791,11 +2038,40 @@ h2 + .h2-descript {
     font-weight: 700;
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
+
+    -webkit-transition-property: border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
 .more-link.blue {
     color: #44b2e0;
     border-bottom: 1px solid #44b2e0;
+}
+
+.more-link.active,
+.more-link:active {
+    border-bottom: 1px solid transparent;
+}
+
+.more-link:hover {
+    border-bottom: 1px solid transparent;
 }
 
 .brands-slider-box {
@@ -1893,6 +2169,16 @@ h2 + .h2-descript {
     transition-timing-function: ease;
 }
 
+.brand-thumbnail .descript ul li a:link,
+.brand-thumbnail .descript ul li a:visited {
+    color: #666666;
+}
+
+.brand-thumbnail .descript ul li a.active,
+.brand-thumbnail .descript ul li a:active {
+    color: #44b2e0;
+}
+
 .brand-thumbnail .descript ul li a:hover {
     color: #44b2e0;
 }
@@ -1947,28 +2233,50 @@ footer {
     padding: 0 0 10px 0;
 }
 
+.footer {
+    display: -webkit-flex;
+    display: flex;
+}
+
 .footer .col {
     float: left;
     padding: 20px 0;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .footer .col-1 {
-    width: 25%;
+    width: 49%;
 }
 
 .footer .col-2 {
-    width: 25%;
-}
-
-.footer .col-3 {
     width: 26%;
 }
 
-.footer .col-4 {
-    width: 24%;
+.footer .col-3 {
+    width: 25%;
     min-height: 249px;
-    padding: 30px 0;
+    padding: 30px 0 40px 0;
     position: relative;
+}
+
+.footer-table .table-row {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+
+.footer-table .table-cell {
+    width: 50%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+}
+
+.footer-table .table-cell.y-m {
+    padding-bottom: 40px;
 }
 
 .footer h3 {
@@ -2004,10 +2312,32 @@ footer {
     font-weight: 300;
     color: #44b2e0;
     padding: 3px 0;
+    text-decoration: none;
 }
+
+.footer a:link,
+.footer a:visited {
+    text-decoration: none;
+}
+
+.footer a.active,
+.footer a:active {
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
 
 .contact-box {
     padding: 9px 0;
+}
+
+.yandex-market {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .seo-txt-block {

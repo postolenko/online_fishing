@@ -10,6 +10,17 @@
 
 $(document).ready(function() {
 
+
+	$(".promo-slider").not('.slick-initialized').slick({
+		dots: false,
+		arrows: false,
+		speed: 800,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 7000
+	});
+
+
 	$(".good-slider-1").not('.slick-initialized').slick({
 		dots: true,
 		arrows: true,
