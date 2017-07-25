@@ -17,7 +17,7 @@ $(document).ready(function() {
 		speed: 800,
 		fade: true,
 		autoplay: true,
-		autoplaySpeed: 7000
+		autoplaySpeed: 12000
 	});
 
 
