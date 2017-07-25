@@ -1,1 +1,1 @@
-# http://postolenko.github.io/online_fisihing/index.html
+# http://postolenko.github.io/online_fishing/index.html
