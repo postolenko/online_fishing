@@ -1498,11 +1498,7 @@ a:active {
 
 }
 
-.shape-dark {
-
-}
-
-.shape-dark .shape {
+.h-shape .shape {
     display: inline-block;
     vertical-align: middle;
     width: 50px;
@@ -1510,6 +1506,14 @@ a:active {
     position: relative;
     top: 1px;
     background: rgba(0, 0, 0, .1);
+}
+
+.h-shape.dark .shape  {
+    background: rgba(0, 0, 0, .1);
+}
+
+.h-shape.light .shape  {
+    background: rgba(255, 255, 255, .2);
 }
 
 .good-thumbnail {
