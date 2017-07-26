@@ -1481,6 +1481,7 @@ a:active {
     font-size: 0;
     line-height: 0;
     padding-top: 0;
+    position: relative;
 }
 
 .h-shape .h-txt {
@@ -1503,9 +1504,18 @@ a:active {
     vertical-align: middle;
     width: 50px;
     height: 1px;
-    position: relative;
-    top: 1px;
+    position: absolute;
+    top: 50%;
+    margin: -10px 0 0 0;
     background: rgba(0, 0, 0, .1);
+}
+
+.h-shape .shape:nth-child(1) {
+    left: 0;
+}
+
+.h-shape .shape:nth-child(2) {
+    right: 0;
 }
 
 .h-shape.dark .shape  {
