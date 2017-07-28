@@ -27,25 +27,32 @@ $(document).ready(function() {
 		speed: 800,
 		slidesToShow: 4,
 		slidesToScroll: 2,
-		// autoplay: true,
+		autoplay: true,
 		appendDots: $(".goods_sl_1 .inner"),
-		autoplaySpeed: 7000
-		 // responsive: [
-		 //    {
-		 //      breakpoint: 1200,
-		 //      settings: {
-		 //        slidesToShow: 2,
-		 //        slidesToScroll: 2
-		 //      }
-		 //    },
-		 //    {
-		 //      breakpoint: 480,
-		 //      settings: {
-		 //        slidesToShow: 1,
-		 //        slidesToScroll: 1
-		 //      }
-		 //    }
-		 //  ]
+		autoplaySpeed: 7000,
+		 responsive: [
+		    {
+		      breakpoint: 1200,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 840,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 510,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
 	});
 
 	$(".good-slider-2").not('.slick-initialized').slick({
@@ -54,25 +61,32 @@ $(document).ready(function() {
 		speed: 800,
 		slidesToShow: 4,
 		slidesToScroll: 2,
-		// autoplay: true,
+		autoplay: true,
 		appendDots: $(".goods_sl_2 .inner"),
-		autoplaySpeed: 7000
-		 // responsive: [
-		 //    {
-		 //      breakpoint: 1200,
-		 //      settings: {
-		 //        slidesToShow: 2,
-		 //        slidesToScroll: 2
-		 //      }
-		 //    },
-		 //    {
-		 //      breakpoint: 480,
-		 //      settings: {
-		 //        slidesToShow: 1,
-		 //        slidesToScroll: 1
-		 //      }
-		 //    }
-		 //  ]
+		autoplaySpeed: 7000,
+		  responsive: [
+		    {
+		      breakpoint: 1200,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 840,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 510,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
 	});
 
 	$(".brands-slider").not('.slick-initialized').slick({
@@ -81,24 +95,46 @@ $(document).ready(function() {
 		speed: 800,
 		slidesToShow: 7,
 		slidesToScroll: 2,
-		// autoplay: true,
-		autoplaySpeed: 7000
-		 // responsive: [
-		 //    {
-		 //      breakpoint: 1200,
-		 //      settings: {
-		 //        slidesToShow: 2,
-		 //        slidesToScroll: 2
-		 //      }
-		 //    },
-		 //    {
-		 //      breakpoint: 480,
-		 //      settings: {
-		 //        slidesToShow: 1,
-		 //        slidesToScroll: 1
-		 //      }
-		 //    }
-		 //  ]
+		autoplay: true,
+		autoplaySpeed: 7000,
+		 responsive: [
+		    {
+		      breakpoint: 1200,
+		      settings: {
+		        slidesToShow: 5,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 910,
+		      settings: {
+		        slidesToShow: 4,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 710,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 510,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 350,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        centerMode: true
+		      }
+		    }
+		  ]
 	});
 
 
