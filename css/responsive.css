@@ -420,16 +420,6 @@
 
 	/*-- /Section 1 Main Page --*/
 
-	/*-- Section 4 Main Page --*/
-
-	.advantages-thumbnail .thumbnail {
-		display: block;
-		margin: 0 auto;
-	    width: 100%;
-	}
-
-	/*-- /Section 4 Main Page --*/
-
 	/*-- Section 6 Main Page --*/
 
 	.brands-section {
@@ -441,7 +431,8 @@
 	/*-- Footer --*/
 
 	.footer .col {
-		/*text-align: center;*/
+		float: none;
+		padding: 6px 0;
 	}
 
 	.footer .col-1 {
