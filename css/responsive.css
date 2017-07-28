@@ -462,6 +462,15 @@
 	    width: 100%;
 	}
 
+	.resp-tel-box ul li {
+	    padding: 3px 1px;
+	}
+
+	.resp-tel-box ul li a {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+
 	/*-- /Footer --*/
 
 }
