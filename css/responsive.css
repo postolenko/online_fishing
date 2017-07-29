@@ -283,16 +283,21 @@
 
 	/*-- Section 1 Catalog Page --*/
 
-/*	.catalog-thumbnails .inner {
-	    width: 100%;
-	    margin: 0;
-	}
 
-	.catalog-thumbnails .good-thumbnail {
-	    width: 50%;
-	}*/
 
 	/*-- /Section 1 Catalog Page --*/
+
+	/*-- Responsive Sort Block --*/
+
+	.range-values-block .input-range-box {
+	    width: 43%;
+	}
+
+	.range-values-block .space {
+	    width: 14%;
+	}
+
+	/*-- Responsive Sort Block --*/
 
 	/*-- Footer --*/
 
@@ -465,6 +470,10 @@
 	    width: 80%;
 	    display: block;
 	    margin: 0 auto;
+	}
+
+	.load_more_btn {
+	    width: 100%;
 	}
 
 	/*-- /Section 1 Catalog Page --*/

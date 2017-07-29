@@ -3729,7 +3729,7 @@ h2 + .h2-descript {
     display: none;
     width: 100%;
     max-height: 100vh;
-    padding: 12px 0 0 0;
+    padding: 12px 0 40px 0;
     position: fixed;
     top: 0;
     left: 0;
