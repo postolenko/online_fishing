@@ -156,7 +156,76 @@ $(document).ready(function() {
 
 	});
 
-
 	$("select").select2();
+
+	priceSlider = document.getElementById('catalog_sl');
+
+    if( priceSlider ) {
+
+      var values;
+
+      noUiSlider.create(priceSlider, {
+          start: [ 18900, 112449 ],
+          connect: true,
+          range: {
+              'min': [  0 ],
+              'max': [ 120000 ]
+          }
+      });
+
+      // ageRange = document.getElementsByClassName('catalog_sl')[0];
+
+      inputNumberMin = document.getElementById("input-number_1");
+      inputNumberMax = document.getElementById("input-number_2");
+
+      setStep = 200;
+
+      var leftRange;
+      var rightRange;
+
+      var activeInputVal;
+
+      priceSlider.noUiSlider.on('update', function( values, handle ) {
+
+          leftRange = parseInt( values[0] );
+          rightRange = parseInt( values[1] );
+
+          $("#input-number_1").attr("value",  leftRange );
+          
+          $("#input-number_2").attr("value",  rightRange );
+
+      });
+
+      $("#input-number_1").keyup(function() {
+
+          activeInputVal = parseInt( $(this).val() );
+
+          if( activeInputVal < parseInt( $("#input-number_2").val() ) ) {
+
+              leftRange = parseInt( $(this).val() );
+
+              priceSlider.noUiSlider.set([leftRange, null]);
+
+          }
+
+      });
+
+      $("#input-number_2").keyup(function() {
+
+          activeInputVal = parseInt( $(this).val() );
+
+          if( activeInputVal > parseInt( $("#input-number_1").val() ) ) {
+
+              rightRange = parseInt( $(this).val() );
+
+              priceSlider.noUiSlider.set([null, rightRange]);
+
+          }
+
+      });
+
+    }
+
+    // ------------------------------------------------
 
 });

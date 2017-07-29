@@ -26,6 +26,8 @@ $(document).ready(function() {
 
     getTabSideBar();
 
+    getRespFilter();
+
     $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
@@ -43,6 +45,8 @@ $(document).ready(function() {
         getScrollBoxRespNavHeight();
 
         getTabSideBar();
+
+        getRespFilter();
 
     });
 
@@ -80,6 +84,64 @@ $(document).ready(function() {
         });
 
     });
+
+    // ----------- Sliding Box -------------------------
+
+    $(function() {
+
+        var sliddingBox;
+        var indexSliddingBlock;
+
+
+        $(".slidding-block").each(function() {
+
+            sliddingBox = $(this).children(".slidding-box");
+
+            indexSliddingBlock = $(this).index(".slidding-block");
+
+            if( sliddingBox.hasClass("visible") ) {
+
+                sliddingBox.slideDown(400);
+
+                $(".slidding-block:eq("+ indexSliddingBlock +") .slide-block-btn").addClass("active");
+
+            } else {
+
+                sliddingBox.slideUp(400);
+
+                $(".slidding-block:eq("+ indexSliddingBlock +") .slide-block-btn").removeClass("active");
+
+            }
+
+        });
+
+
+        $(".slide-block-btn").click(function() {
+
+            parentSliddingBlock = $(this).closest(".slidding-block");
+
+            sliddingBox = parentSliddingBlock.children(".slidding-box");
+
+            if( sliddingBox.is(":hidden") ) {
+
+                $(this).addClass("active");
+
+                sliddingBox.slideDown(400);
+
+            } else {
+
+                $(this).removeClass("active");
+
+                sliddingBox.slideUp(400);
+
+            }
+
+        });
+
+
+    });
+
+    // ----------- /Sliding Box -------------------------
 
     // ----------- Responsive Navigation  --------------
 
@@ -143,6 +205,34 @@ $(document).ready(function() {
     });
 
     // ----------- Responsive Navigation  --------------
+
+    $(function() {
+
+        $(".show_resp_sort").click(function() {
+
+            $(".resp-sort-block").fadeIn(300);
+
+         });
+
+         $(".close-resp-sort").click(function() {
+
+            $(".resp-sort-block").fadeOut(300);
+
+         });
+
+         $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27) {
+
+               $(".resp-sort-block").fadeOut(300);
+
+            }
+
+        });
+
+    });
+
+    // ----------- Responsive Sort Block  --------------
 
     // ----------- Sidebar Menu -------------    
 
@@ -232,6 +322,31 @@ $(document).ready(function() {
 
         }
 
+    }
+
+    function getRespFilter() {
+
+        if( bodyWidth <= 768 ) {
+
+            $(".sort-append").each(function() {
+
+                var insertAttr = $(this).attr("data-resp-sort-row");
+
+                $(this).append($("[data-sort-row = "+ insertAttr +"]"));
+
+            });
+
+        } else {
+
+            $(".forrow-append").each(function() {
+
+                var insertAttr = $(this).attr("data-for-desk-append");
+
+                $(this).appendTo($("[data-desk-append = "+ insertAttr +"]"));
+
+            });     
+
+        }
 
     }
 

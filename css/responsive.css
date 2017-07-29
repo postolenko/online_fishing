@@ -65,6 +65,14 @@
 	    padding: 25px 0;
 	}
 
+	.two-cols-tmpl .col-1 {
+	    width: 26%;
+	}
+
+	.two-cols-tmpl .col-2 {
+	    width: 74%;
+	}
+
 	/*-- Header Site --*/
 
 	.tel-box .tel-box-col-1 {
@@ -136,6 +144,27 @@
 
 	/*-- /Section 2 Main Page --*/
 
+	/*-- Section 1 Catalog Page --*/
+
+	.catalog-thumbnails .inner {
+	    width: 100%;
+	    margin: 0;
+	}
+
+	.catalog-thumbnails .good-thumbnail {
+	    width: 50%;
+	}
+
+	.range-values-block .input-range-box {
+	    width: 100%;
+	}
+
+	.range-values-block .space {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 Catalog Page --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -159,6 +188,18 @@
 
 
 @media only screen and (max-width: 768px) {
+
+	.tab-visible {
+	    display: block;
+	}
+
+	.tab-hidden {
+	    display: none;
+	}
+
+	.sidebar-thumb {
+		box-shadow: none;
+	}
 
 	.content {
 		padding-top: 68px;
@@ -240,6 +281,19 @@
 
 	/*-- /Section 4 Main Page --*/
 
+	/*-- Section 1 Catalog Page --*/
+
+/*	.catalog-thumbnails .inner {
+	    width: 100%;
+	    margin: 0;
+	}
+
+	.catalog-thumbnails .good-thumbnail {
+	    width: 50%;
+	}*/
+
+	/*-- /Section 1 Catalog Page --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -279,6 +333,14 @@
 	.sidebar {
 	    margin: 5px 0;
 	}
+
+	/*-- Responsive Sort Block --*/
+
+	.resp-sort-block .checkbox-block {
+	    width: 49%;
+	}
+
+	/*-- .Responsive Sort Block --*/
 
 }
 
@@ -389,6 +451,24 @@
 
 	/*-- /Section 5 Main Page --*/
 
+	/*-- Responsive Sort Block --*/
+
+	.resp-sort-block .checkbox-block {
+	    width: 100%;
+	}
+
+	/*-- /Responsive Sort Block --*/
+
+	/*-- Section 1 Catalog Page --*/
+
+	.catalog-thumbnails .good-thumbnail {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+	/*-- /Section 1 Catalog Page --*/
+
 }
 
 @media only screen and (max-width: 350px) {
@@ -427,6 +507,14 @@
 	}
 
 	/*-- /Section 6 Main Page  --*/
+
+	/*-- Section 1 Catalog Page --*/
+
+	.catalog-thumbnails .good-thumbnail {
+	    width: 98%;
+	}
+
+	/*-- /Section 1 Catalog Page --*/
 
 	/*-- Footer --*/
 
@@ -490,5 +578,13 @@
 
 
 	/*-- /Section 1 Main Page --*/
+
+	/*-- Responsive Sort Block --*/
+
+	.resp-sort-block {
+		display: none!important;
+	}
+
+	/*-- .Responsive Sort Block --*/
 
 }
