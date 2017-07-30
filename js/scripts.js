@@ -208,13 +208,59 @@ $(document).ready(function() {
 
     $(function() {
 
+        var indexThumb;
         var inputRadioThumb;
+        var indexTabAttr;
+        var leftTringleCoor;
+        var triangleWidth = 20;
 
         $(".delivery-thumbnails .thumbnail").each(function() {
 
-            var inputRadioThumb = $(this).children(".deliver-input");
+            indexThumb = $(this).index(".delivery-thumbnails .thumbnail");
 
-            var indexTabAttr = $(this).attr("data-tab-link-index");
+            inputRadioThumb = $(".delivery-thumbnails .thumbnail:eq("+ indexThumb +") .deliver-input");            
+
+            if($(".delivery-thumbnails .thumbnail:eq("+ indexThumb +") .deliver-input:checked").length > 0) {
+
+                indexTabAttr = $(".delivery-thumbnails .thumbnail:eq("+ indexThumb +")" ).attr("data-tab-link-index");
+
+                $(".delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"']").fadeIn(500);
+
+                leftTringleCoor = $(".delivery-thumbnails .thumbnail:eq("+ indexThumb +")").offset().left + triangleWidth;
+
+                $(".delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"'] .tab-arrow").offset({left: leftTringleCoor});
+
+            }
+
+        });
+
+        $(".deliver-radio label").click(function() {
+
+            var forAttr = $(this).attr("for");
+
+            if( $(".deliver-radio[id = '"+ forAttr +"']:checked").length != true ) {
+
+                console.log("checked");
+
+                var parentThumb = $(this).closest(".thumbnail");
+
+                indexTabAttr = parentThumb.attr("data-tab-link-index");
+
+                $(".delivery-info .tab").css({
+                    "display" : "none"
+                });
+
+
+
+                $(".delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"']").css({
+                    "display" : "block"
+                });
+
+                leftTringleCoor = parentThumb.offset().left + triangleWidth;
+
+                $(".delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"'] .tab-arrow").offset({left: leftTringleCoor});
+
+            }
 
         });
 

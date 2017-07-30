@@ -4584,12 +4584,14 @@ h2 + .h2-descript {
 }
 
 .delivery-info {
+    min-height: 230px;
     background: #ffffff;
     margin: 20px 0 12px 0;
     position: relative;
 }
 
 .delivery-info .tab {
+    display: none;
     min-height: 230px;
     padding: 26px 3% 20px 3%;
 }
@@ -4600,6 +4602,7 @@ h2 + .h2-descript {
     position: absolute;
     top: -10px;
     left: 0;
+    margin-left: 10px;
     border-style: solid;
     border-width: 0 10px 10px 10px;
     border-color: transparent transparent #ffffff transparent;
