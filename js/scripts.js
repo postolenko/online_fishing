@@ -204,6 +204,24 @@ $(document).ready(function() {
 
     });
 
+    // ----------- Delivery Thumbnils  --------------
+
+    $(function() {
+
+        var inputRadioThumb;
+
+        $(".delivery-thumbnails .thumbnail").each(function() {
+
+            var inputRadioThumb = $(this).children(".deliver-input");
+
+            var indexTabAttr = $(this).attr("data-tab-link-index");
+
+        });
+
+    });
+
+    // ----------- /Delivery Thumbnils  --------------
+
     // ----------- Responsive Navigation  --------------
 
     $(function() {

@@ -4585,11 +4585,12 @@ h2 + .h2-descript {
 
 .delivery-info {
     background: #ffffff;
-    margin: 20px 0;
+    margin: 20px 0 12px 0;
     position: relative;
 }
 
 .delivery-info .tab {
+    min-height: 230px;
     padding: 26px 3% 20px 3%;
 }
 
