@@ -208,57 +208,76 @@ $(document).ready(function() {
 
     $(function() {
 
+        var indexTabs;
         var indexThumb;
         var inputRadioThumb;
         var indexTabAttr;
         var leftTringleCoor;
         var triangleWidth = 20;
+        var forAttr;
+        var parentThumb;
 
-        $(".delivery-thumbnails .thumbnail").each(function() {
+        $(".tabs-section").each(function() {
 
-            indexThumb = $(this).index(".delivery-thumbnails .thumbnail");
+            indexTabs = $(this).index(".tabs-section");
 
-            inputRadioThumb = $(".delivery-thumbnails .thumbnail:eq("+ indexThumb +") .deliver-input");            
+            $(".delivery-thumbnails:eq("+ indexTabs +") .thumbnail").each(function() {
 
-            if($(".delivery-thumbnails .thumbnail:eq("+ indexThumb +") .deliver-input:checked").length > 0) {
+                indexThumb = $(this).index(".tabs-section:eq("+ indexTabs +") .delivery-thumbnails .thumbnail");
 
-                indexTabAttr = $(".delivery-thumbnails .thumbnail:eq("+ indexThumb +")" ).attr("data-tab-link-index");
+                inputRadioThumb = $(".tabs-section:eq("+ indexTabs +") .delivery-thumbnails .thumbnail:eq("+ indexThumb +") .deliver-input");            
 
-                $(".delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"']").fadeIn(500);
+                if($(".tabs-section:eq("+ indexTabs +") .delivery-thumbnails .thumbnail:eq("+ indexThumb +") .deliver-input:checked").length > 0) {
 
-                leftTringleCoor = $(".delivery-thumbnails .thumbnail:eq("+ indexThumb +")").offset().left + triangleWidth;
+                    indexTabAttr = $(".tabs-section:eq("+ indexTabs +") .delivery-thumbnails .thumbnail:eq("+ indexThumb +")" ).attr("data-tab-link-index");
 
-                $(".delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"'] .tab-arrow").offset({left: leftTringleCoor});
+                    $(".tabs-section:eq("+ indexTabs +") .delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"']").fadeIn(500);
 
-            }
+                    leftTringleCoor = $(".tabs-section:eq("+ indexTabs +") .delivery-thumbnails .thumbnail:eq("+ indexThumb +")").offset().left + triangleWidth;
+
+                    $(".tabs-section:eq("+ indexTabs +") .delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"'] .tab-arrow").offset({left: leftTringleCoor});
+
+                }
+
+            });
 
         });
 
         $(".deliver-radio label").click(function() {
 
-            var forAttr = $(this).attr("for");
+            forAttr = $(this).attr("for");
 
-            if( $(".deliver-radio[id = '"+ forAttr +"']:checked").length != true ) {
+            if( !$(".deliver-input[id = '"+ forAttr +"']:checked").length ) {
 
-                console.log("checked");
+                parentTabs = $(this).closest(".tabs-section");
 
-                var parentThumb = $(this).closest(".thumbnail");
+                indexTabs = parentTabs.index(".tabs-section");
+
+                parentThumb = $(this).closest(".thumbnail");
 
                 indexTabAttr = parentThumb.attr("data-tab-link-index");
 
-                $(".delivery-info .tab").css({
-                    "display" : "none"
-                });
+                $(".tabs-section:eq("+ indexTabs +") .tab").each(function() { 
 
+                    if( $(this).attr("data-tab-index") == indexTabAttr ) {
 
+                        $(".tabs-section:eq("+ indexTabs +") .tab[data-tab-index = '"+ indexTabAttr  +"']").css({
+                            "display" : "block"
+                        });
 
-                $(".delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"']").css({
-                    "display" : "block"
-                });
+                    } else {
+
+                         $(this).css({
+                            "display" : "none"
+                        });
+
+                    }
+
+                });                
 
                 leftTringleCoor = parentThumb.offset().left + triangleWidth;
 
-                $(".delivery-info .tab[data-tab-index = '"+ indexTabAttr  +"'] .tab-arrow").offset({left: leftTringleCoor});
+                $(".tabs-section:eq("+ indexTabs +") .tab[data-tab-index = '"+ indexTabAttr  +"'] .tab-arrow").offset({left: leftTringleCoor});
 
             }
 

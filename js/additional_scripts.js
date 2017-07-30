@@ -258,7 +258,7 @@ $(document).ready(function() {
 
 		} else if( bodyWidth <= 768) {
 
-			$(".delivery-thumbnails-slider").slick({
+			$(".delivery-thumbnails-slider").not('.slick-initialized').slick({
 				arrows: false,
 				dots: false,
 		   		slidesToShow: 4,
@@ -288,7 +288,7 @@ $(document).ready(function() {
 				]
 			});
 
-			$(".payments-thumbnails-slider").slick({
+			$(".payments-thumbnails-slider").not('.slick-initialized').slick({
 				arrows: false,
 				dots: false,
 		   		slidesToShow: 4,
