@@ -44,12 +44,12 @@
 
 @font-face {
     font-family: "Panton";
-    src: url("../Panton-Regular.eot");
-    src: url("../Panton-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../Panton-Regular.woff2") format("woff2"),
-        url("../Panton-Regular.woff") format("woff"),
-        url("../Panton-Regular.ttf") format("truetype"),
-        url("../Panton-Regular.svg#Panton-Regular") format("svg");
+    src: url("../fonts/Panton-Regular.eot");
+    src: url("../fonts/Panton-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Panton-Regular.woff2") format("woff2"),
+        url("../fonts/Panton-Regular.woff") format("woff"),
+        url("../fonts/Panton-Regular.ttf") format("truetype"),
+        url("../fonts/Panton-Regular.svg#Panton-Regular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -3846,20 +3846,19 @@ h2 + .h2-descript {
 }
 
 .card-table-header {
-    display: table;
-    width: 100%;
-    border-collapse: collapse;
+    font-size: 0;
+    line-height: 0;
     border-bottom: 1px solid #e0e4e4;
 }
 
 .card-table-header .table-cell {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 10px 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 7px 0 11px 0;
 }
 
 .card-table-header .cell-1 {
-    width: 12%;
+    width: 11%;
 }
 
 .card-table-header .cell-2 {
@@ -3880,8 +3879,7 @@ h2 + .h2-descript {
 }
 
 .card-table-header .cell-6 {
-    width: 15%;
-    text-align: right;
+    width: 6%;
 }
 
 .card-table-header .table-cell h3 {
@@ -3893,9 +3891,9 @@ h2 + .h2-descript {
 }
 
 .card-table-row {
-    display: table;
-    border-collapse: collapse;
-    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
     border-bottom: 1px solid #e0e4e4;
 }
 
@@ -3904,35 +3902,45 @@ h2 + .h2-descript {
 }
 
 .card-table-row .table-cell {
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
-    padding: 20px 0;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
 .card-table-row .cell-1 {
-    width: 12%;
+    width: 11%;
 }
 
 .card-table-row .cell-2 {
-    width: 38%;
+    width: 81%;
 }
 
 .card-table-row .cell-3 {
-    width: 17%;
-}
-
-.card-table-row .cell-4 {
-    width: 16%;
-}
-
-.card-table-row .cell-5 {
-    width: 12%;
-    text-align: center;
-}
-
-.card-table-row .cell-6 {
-    width: 15%;
+    width: 8%;
     text-align: right;
+}
+
+.card-table-row .cell-2 .cell {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-table-row .cell-2 .cell-2-cell-1 {
+    width: 47%;
+}
+
+.card-table-row .cell-2 .cell-2-cell-2 {
+    width: 21%;
+}
+
+.card-table-row .cell-2 .cell-2-cell-3 {
+    width: 23%;
+}
+
+.card-table-row .cell-2 .cell-2-cell-4 {
+    width: 9%;
+    text-align: center;
 }
 
 .card-table-row .cell-1 .img-box {
@@ -3973,6 +3981,15 @@ h2 + .h2-descript {
     color: #000000;
 }
 
+.card-table-row p.p-resp {
+    display: none;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #000000;
+}
+
 .card-table-row p.old-price {
     display: inline-block;
     vertical-align: top;
@@ -3998,7 +4015,8 @@ h2 + .h2-descript {
 }
 
 .choise-count {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     width: 126px;
     height: 34px;
     font-size: 0;
@@ -4120,7 +4138,7 @@ h2 + .h2-descript {
     left: 12px;
 }
 
-.card-table-row .cell-5 p {
+.card-table-row .cell-2 .cell-2-cell-4 p {
     font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -4128,7 +4146,7 @@ h2 + .h2-descript {
     color: #000000;    
 }
 
-.card-table-row .cell-5 .fa {
+.card-table-row .cell-2 .cell-2-cell-4 .fa {
     font-size: 15px;
     line-height: 20px;
     font-weight: bold;
@@ -4779,11 +4797,11 @@ h2 + .h2-descript {
 }
 
 .submit-fill {
-    padding: 35px 0;
+    padding: 25px 0;
 }
 
 .reports-table {
-    margin: 8px 0 0 0;
+    margin: 8px 3% 0 0;
 }
 
 .reports-table .table {
@@ -4836,7 +4854,7 @@ h2 + .h2-descript {
     display: inline-block;
     vertical-align: top;
     width: 66.66%;
-    /*padding-right: 2%;*/
+    padding: 7px 2% 7px 0;
 }
 
 .textarea-block textarea {
@@ -4863,6 +4881,7 @@ h2 + .h2-descript {
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
+    padding: 7px 0;
     text-align: right;
 }
 

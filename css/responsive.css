@@ -165,6 +165,61 @@
 
 	/*-- /Section 1 Catalog Page --*/
 
+	 /*-- Section 1 Card Page --*/
+
+	.card-table-header .cell-2 {
+	    width: 33%;
+	}
+
+	.card-table-header .cell-3 {
+	    width: 19%;
+	}
+
+	.card-table-header .cell-4 {
+	    width: 17%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-1 {
+	    width: 40%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-2 {
+	    width: 24%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-3 {
+	    width: 23%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-4 {
+	    width: 13%;
+	    text-align: center;
+	}
+
+	.filling-item .col {
+	    padding: 10px 0;
+	}
+
+	.filling-item .col-1 {
+	    width: 100%;
+	}
+
+	.filling-item .col-2 {
+	    width: 100%;
+	}
+
+	.filling-item .col-1 .inner-col-1 {
+	    max-width: 70px;
+	    padding-right: 0;
+	}
+
+	.filling-item .col-1 .inner-col-2 {
+	    padding-right: 0;
+	    padding-top: 5px 0;
+	}
+
+	 /*-- /Section 1 Card Page --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -298,6 +353,91 @@
 
 	/*-- Responsive Sort Block --*/
 
+	/*-- Section 1 Card Page --*/
+
+	.card-table-header {
+		display: none;
+	}
+
+	.card-table-row .cell-2 .cell {
+		padding: 10px 1%;
+	}
+
+	.card-table-row .cell-1 {
+	    width: 18%;
+	}
+
+	.card-table-row .cell-2 {
+	    width: 77%;
+	}
+
+	.card-table-row .cell-3 {
+	    width: 5%;
+	}
+
+	.card-table-row .cell-2 .cell {
+	    vertical-align: top;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-1 {
+	    width: 100%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-2 {
+	    width: 28%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-3 {
+	    width: 36%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-4 {
+	    width: 36%;
+	}
+
+	.card-table-row p.p-resp {
+		display: block;
+		padding: 10px 0;
+	}
+
+	.filling-item .col-2 .inner-col {
+		padding-top: 0;
+	}
+
+	.filling-item .col-2 .inner-col-1 {
+	    width: 50%;
+	}
+
+	.filling-item .col-2 .inner-col-2 {
+	    width: 50%;
+	}
+
+	.filling-item .col-2 .inner-col-2 {
+	    width: 50%;
+	}
+
+	.delivery-thumbnails .thumbnail {
+	    padding: 0 0.5%;
+	}
+
+	.tab-form .input-block {
+	    width: 48%;
+	}
+
+	.filling-item .col-2 .textarea-block {
+	    width: 56%;
+	}
+
+	.filling-item .col-2 .textarea-block {
+	    width: 56%;
+	}
+
+	.filling-item .col-2 .submit-btn-col {
+	    width: 44%;
+	}
+
+	 /*-- /Section 1 Card Page --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -345,6 +485,38 @@
 	}
 
 	/*-- .Responsive Sort Block --*/
+
+	/*-- Section 1 Card Page --*/
+
+	.filling-item .col-2 .inner-col-1 {
+	    width: 100%;
+	}
+
+	.filling-item .col-2 .inner-col-2 {
+	    width: 100%;
+	}
+
+	.filling-item .col-2 .inner-col-2 {
+	    width: 100%;
+	}
+
+	.filling-item .col-2 .textarea-block {
+	    width: 100%;
+	}
+
+	.filling-item .col-2 .submit-btn-col {
+	    width: 100%;
+	}
+
+	.filling-item .col-2 .textarea-block {
+	    padding-right: 0;
+	}
+
+	.submit-btn {
+	    padding: 7px 1%;
+	}
+
+	 /*-- /Section 1 Card Page --*/
 
 }
 
@@ -484,6 +656,82 @@
 	}
 
 	/*-- /Section 1 Catalog Page --*/
+
+	/*-- Section 1 Card Page --*/
+
+	.card-table-row .cell-1 {
+	    width: 25%;
+	}
+
+	.card-table-row .cell-2 {
+    	width: 75%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-1 {
+	    padding-right: 25px;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-2 {
+	    width: 50%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-3 {
+	    width: 50%;
+	    text-align: right;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-4 {
+	    width: 100%;
+	    text-align: right;
+	}
+
+	.card-table-row .cell-3 {
+	    width: 5%;
+	    position: absolute;
+	    top: 6px;
+	    right: 1%;
+	}
+
+	.card-table-row .cell-2 .cell-2-cell-4 p.p-resp {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 10px 0 0;
+	}
+
+	.total-price-row p {
+	    font-size: 22px;
+	}
+
+	.tab-form .input-block {
+	    width: 100%;
+	}
+
+	.submit-btn {
+	    width: 100%;
+	    max-width: 100%;
+	}
+
+	/*-- /Section 1 Card Page --*/
+
+}
+
+@media only screen and (max-width: 380px) {
+
+	.card-table-row .cell-1 {
+	    width: 100%;
+	}
+
+	.card-table-row .cell-2 {
+	    width: 100%;
+	}
+
+	.card-table-row .table-cell {
+	    margin: 2px 0;
+	}
+
+	.card-table-row .cell-2 .cell {
+	    padding: 6px 1%;
+	}
 
 }
 
