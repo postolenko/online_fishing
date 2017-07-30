@@ -41,95 +41,97 @@ $(document).ready(function() {
 	var goodThumbs = document.querySelectorAll(".catalog-inner .good-thumbnail");
 	var loadBtn = document.getElementById("load");
 
-	var flag = 1;
+	if(catalogThumbnailsWrapp) {
 
-	var lastThumb = goodThumbs[goodThumbs.length - 1];
+		var flag = 1;
+		var lastThumb = goodThumbs[goodThumbs.length - 1];
+		var thumbnailHeight = goodThumbnail.offsetHeight;
+		var topCoorCatalogThumbnailsWrapp;
+		var topCoorLastThumb;
+		var lastCoor;
+		var bottomCoor;	
 
-	var thumbnailHeight = goodThumbnail.offsetHeight;
+		// var animationStop = false;
 
-	var topCoorCatalogThumbnailsWrapp;
+		getCoords(catalogThumbnailsWrapp);
 
-	var topCoorLastThumb;
+		getVisibleTHumbs();
 
-	var lastCoor;
+		loadBtn.onclick = function() {
 
-	var bottomCoor;	
+			// if(animationStop == false ) {
 
-	// var animationStop = false;
+				flag++;
 
-	getCoords(catalogThumbnailsWrapp);
+				getVisibleTHumbs()
 
-	getVisibleTHumbs();
+			// }
 
-	loadBtn.onclick = function() {
+		}
 
-		// if(animationStop == false ) {
-
-			flag++;
-
-			getVisibleTHumbs()
-
-		// }
-
-	}	
+	}
 
 	function getVisibleTHumbs() {
+		
+		if(catalogThumbnailsWrapp) {
 
-		for(var screenKey in countThumbs) {
+			for(var screenKey in countThumbs) {
 
-			screenParam = countThumbs[screenKey].minWidth;
+				screenParam = countThumbs[screenKey].minWidth;
 
-			if( bodyWidth > screenParam ) {
+				if( bodyWidth > screenParam ) {
 
-				countRows = countThumbs[screenKey].countVisibleRows;
+					countRows = countThumbs[screenKey].countVisibleRows;
 
-				countShowElem = countThumbs[screenKey].countLoadingRows;
+					countShowElem = countThumbs[screenKey].countLoadingRows;
 
-				topCoorCatalogThumbnailsWrapp = getCoords(catalogThumbnailsWrapp);
+					topCoorCatalogThumbnailsWrapp = getCoords(catalogThumbnailsWrapp);
 
-				topCoorLastThumb = getCoords(lastThumb);
+					topCoorLastThumb = getCoords(lastThumb);
 
-				lastCoor = topCoorLastThumb + thumbnailHeight - topCoorCatalogThumbnailsWrapp;			
+					lastCoor = topCoorLastThumb + thumbnailHeight - topCoorCatalogThumbnailsWrapp;			
 
-				bottomCoor = thumbnailHeight * countRows * flag;
+					bottomCoor = thumbnailHeight * countRows * flag;
 
-				if ( lastCoor < bottomCoor ) {
+					if ( lastCoor < bottomCoor ) {
 
-					bottomCoor = lastCoor;
+						bottomCoor = lastCoor;
+
+						catalogThumbnailsWrapp.style.height = bottomCoor + "px";
+
+						loadBtn.style.display = "none";
+
+					} else {
+
+						loadBtn.style.display = "block";
+
+					}
 
 					catalogThumbnailsWrapp.style.height = bottomCoor + "px";
 
-					loadBtn.style.display = "none";
+					// var catalogThumbnailsWrappActualHeight = catalogThumbnailsWrapp.offsetHeight;
 
-				} else {
+					// var heightAnimationVal = bottomCoor - catalogThumbnailsWrappActualHeight;
 
-					loadBtn.style.display = "block";
+					// var setHeightcatalogThumbnailsWrapp = setInterval(function() {
+
+					// 	catalogThumbnailsWrappActualHeight++;
+
+					// 	if(catalogThumbnailsWrappActualHeight >= bottomCoor) {
+
+					// 		clearInterval(setHeightcatalogThumbnailsWrapp);
+
+					// 		catalogThumbnailsWrapp.style.height = bottomCoor + "px";
+
+					// 	}
+
+					// 	catalogThumbnailsWrapp.style.height = catalogThumbnailsWrappActualHeight + "px";
+
+					// }, 45);
+
+					break;
 
 				}
-
-				catalogThumbnailsWrapp.style.height = bottomCoor + "px";
-
-				// var catalogThumbnailsWrappActualHeight = catalogThumbnailsWrapp.offsetHeight;
-
-				// var heightAnimationVal = bottomCoor - catalogThumbnailsWrappActualHeight;
-
-				// var setHeightcatalogThumbnailsWrapp = setInterval(function() {
-
-				// 	catalogThumbnailsWrappActualHeight++;
-
-				// 	if(catalogThumbnailsWrappActualHeight >= bottomCoor) {
-
-				// 		clearInterval(setHeightcatalogThumbnailsWrapp);
-
-				// 		catalogThumbnailsWrapp.style.height = bottomCoor + "px";
-
-				// 	}
-
-				// 	catalogThumbnailsWrapp.style.height = catalogThumbnailsWrappActualHeight + "px";
-
-				// }, 45);
-
-				break;
 
 			}
 
@@ -139,18 +141,22 @@ $(document).ready(function() {
 
 	function getCoords(coordElem) {
 
-	  var box = coordElem.getBoundingClientRect();
+		if(catalogThumbnailsWrapp) {
 
-	  var body = document.body;
-	  var docEl = document.documentElement;
+		  var box = coordElem.getBoundingClientRect();
 
-	  var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+		  var body = document.body;
+		  var docEl = document.documentElement;
 
-	  var clientTop = docEl.clientTop || body.clientTop || 0;
+		  var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
 
-	  var top = box.top + scrollTop - clientTop;
+		  var clientTop = docEl.clientTop || body.clientTop || 0;
 
-	  return top;
+		  var top = box.top + scrollTop - clientTop;
+
+		  return top;
+
+		 }
 
 	}
 

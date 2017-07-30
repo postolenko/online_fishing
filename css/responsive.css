@@ -284,7 +284,6 @@
 	/*-- Section 1 Catalog Page --*/
 
 
-
 	/*-- /Section 1 Catalog Page --*/
 
 	/*-- Responsive Sort Block --*/
@@ -350,6 +349,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+	.wrapper {
+		padding-top: 20px;
+	}
 
 	.shape_1_bg {
 	    background-image: none;
@@ -465,6 +468,10 @@
 	/*-- /Responsive Sort Block --*/
 
 	/*-- Section 1 Catalog Page --*/
+
+	.header-section .select-block {
+	    margin: 10px 2% 10px 0;
+	}
 
 	.catalog-thumbnails .good-thumbnail {
 	    width: 80%;

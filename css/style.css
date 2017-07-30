@@ -43,6 +43,19 @@
 }
 
 @font-face {
+    font-family: "Panton";
+    src: url("../Panton-Regular.eot");
+    src: url("../Panton-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../Panton-Regular.woff2") format("woff2"),
+        url("../Panton-Regular.woff") format("woff"),
+        url("../Panton-Regular.ttf") format("truetype"),
+        url("../Panton-Regular.svg#Panton-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: "Museo Sans Cyrl";
     src: url("../fonts/MuseoSansCyrl-700.eot");
     src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"),
@@ -204,6 +217,10 @@ section.offset-small {
     padding: 26px 0;
 }
 
+section.padding-botom-ziro {
+    padding-bottom: 0;
+}
+
 h1 {
 
 }
@@ -284,6 +301,11 @@ a:active {
 
 .tab-hidden {
     display: block;
+}
+
+.h2-box h2 {
+    text-align: left;
+    padding: 20px 0 5px 0;
 }
 
 /*-- Slick Styles --*/
@@ -1941,7 +1963,7 @@ a:active {
     background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 53%, rgba(255,255,255,0.24) 100%);
     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 53%,rgba(255,255,255,0.24) 100%);
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 53%,rgba(255,255,255,0.24) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#3dffffff',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00ffffff", endColorstr="#3dffffff",GradientType=0 );
 }
 
 .promo-img-box img {
@@ -2994,7 +3016,8 @@ h2 + .h2-descript {
     font-weight: bold;
     color: #323d4a;
     text-align: left;
-    padding: 21px 0 13px 0;
+    /*padding: 21px 0 13px 0;*/
+    padding: 11px 0 13px 0;
 }
 
 .filter-resp-block {
@@ -3003,7 +3026,7 @@ h2 + .h2-descript {
 
 .header-section .select-block {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 247px;
     margin: 10px 2% 10px 0;
 }
@@ -3649,7 +3672,7 @@ h2 + .h2-descript {
     position: absolute;
     top: 6px;
     left: 0;
-    background: transparent;
+    background: #ffffff;
     border: 1px solid #dcdcdc;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -3802,6 +3825,1108 @@ h2 + .h2-descript {
 /*-- /Responsive Sort Block --*/
 
 /*-- /Section 1 Catalog Page --*/
+
+/*-- Section 1 Card Page --*/
+
+.header-section .breadcrumbs-block {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.header-section .select-block {
+    display: inline-block;
+    vertical-align: middle;
+    width: 247px;
+    margin: 10px 2% 20px 0;
+}
+
+.card-table {
+
+}
+
+.card-table-header {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid #e0e4e4;
+}
+
+.card-table-header .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+.card-table-header .cell-1 {
+    width: 12%;
+}
+
+.card-table-header .cell-2 {
+    width: 38%;
+}
+
+.card-table-header .cell-3 {
+    width: 17%;
+}
+
+.card-table-header .cell-4 {
+    width: 16%;
+}
+
+.card-table-header .cell-5 {
+    width: 12%;
+    text-align: center;
+}
+
+.card-table-header .cell-6 {
+    width: 15%;
+    text-align: right;
+}
+
+.card-table-header .table-cell h3 {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.card-table-row {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 1px solid #e0e4e4;
+}
+
+.card-table-row:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.card-table-row .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px 0;
+}
+
+.card-table-row .cell-1 {
+    width: 12%;
+}
+
+.card-table-row .cell-2 {
+    width: 38%;
+}
+
+.card-table-row .cell-3 {
+    width: 17%;
+}
+
+.card-table-row .cell-4 {
+    width: 16%;
+}
+
+.card-table-row .cell-5 {
+    width: 12%;
+    text-align: center;
+}
+
+.card-table-row .cell-6 {
+    width: 15%;
+    text-align: right;
+}
+
+.card-table-row .cell-1 .img-box {
+    display: block;
+    width: 90%;
+    height: 76px;
+    max-width: 76px;
+    max-height: 76px;
+    overflow: hidden;
+    background: #ffffff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.card-table-row .cell-1 .img-box img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.card-table-row h3 {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #43b1df;
+}
+
+.card-table-row p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2px;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.card-table-row p.old-price {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 5px;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #565656;
+}
+
+.card-table-row .old-price:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #565656;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -1px 0 0 0;
+}
+
+.choise-count {
+    display: block;
+    width: 126px;
+    height: 34px;
+    font-size: 0;
+    line-height: 0;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.choise-count .input-field {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.input-field.count-num {
+    width: 46px;
+}
+
+.input-field input[type="number"] {
+    display: block;
+    width: 100%;
+    height: 32px;
+    border: none;
+    padding: 3px 4px 3px 2px;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    text-align: center;
+    background: #ffffff;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+.choise-count button {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border-width: 0;
+    background: #ffffff;
+    width: 39px;
+    height: 32px;
+    position: relative;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease; 
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease; 
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+.choise-count button:link,
+.choise-count button:visited {
+    background: #44b2e0;
+}
+
+.choise-count button:hover {
+    background: #fbd03e;
+}
+
+.choise-count button.active {
+    background: #81c632;
+}
+
+.choise-count button:active {
+    background: #81c632;
+}
+
+.choise-count button i {
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    line-height: 24px;
+    color: #44b2e0;
+}
+
+.choise-count button.plus {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.choise-count button.minus {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -ms-border-radius: 0 4px 4px 0;
+    -o-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.choise-count button.plus i {
+    top: 5px;
+    left: 12px;
+}
+
+.choise-count button.minus i {
+    top: 5px;
+    left: 12px;
+}
+
+.card-table-row .cell-5 p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #000000;    
+}
+
+.card-table-row .cell-5 .fa {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #000000;    
+}
+
+.del-good-row {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: #44b2e0;
+    border: 1px solid #44b2e0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: normal;
+    color: #f4f7f6;
+
+    -webkit-transition-property: background, border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease; 
+
+    -moz-transition-property: background, border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease; 
+
+    transition-property: background, border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+.del-good-row:after {
+    content: "\2716";
+}
+
+.del-good-row:link,
+.del-good-row:visited {
+    background: #44b2e0;
+    border: 1px solid #44b2e0;
+}
+
+.del-good-row:hover {
+    background: #fbd03e;
+    border: 1px solid #fbd03e;
+}
+
+.del-good-row.active {
+    background: #81c632;
+    border: 1px solid #81c632;
+}
+
+.del-good-row:active {
+    background: #81c632;
+    border: 1px solid #81c632;
+}
+
+.card-table-row .checkbox-block {
+    display: inline-block;
+    vertical-align: top;
+    margin: 11px 0;
+    padding-right: 28px;
+}
+
+ .total-price-row {
+    display: block;
+    text-align: right;
+    padding: 12px 7% 12px 
+ }
+
+.total-price-row p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: normal;
+    color: #323d4a;
+    padding-right: 22px;
+}
+
+.total-price-row p.total-price {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: bold;
+    color: #323d4a;
+    padding-right: 0;
+}
+
+.filling-form {
+    margin: 16px 0 0 0;
+}
+
+.filling-form:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #e0e4e4;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.filling-form-row.white-bg {
+    background: #ffffff;
+}
+
+.filling-item {
+    border-bottom: 1px solid #e0e4e4;
+}
+
+.filling-item:last-child {
+    border: none;
+}
+
+.filling-item .col {
+    float: left;
+    padding: 25px 0;
+}
+
+.filling-item .col-1 {
+    width: 25%;
+    font-size: 0;
+    line-height: 0;
+}
+
+.filling-item .col-2 {
+    width: 75%;
+    font-size: 0;
+    line-height: 0;
+}
+
+.filling-item .col-1 .inner-col {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0;
+}
+
+.filling-item .col-2 .inner-col {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0;
+}
+
+.filling-item .col-1 .inner-col-1 {
+    width: 20%;
+    padding-right: 2%;
+}
+
+.filling-item .col-1 .inner-col-2 {
+    width: 80%;
+    padding-right: 8%;
+}
+
+.filling-item .col-2 .inner-col-1 {
+    width: 33.33%;
+}
+
+.filling-item .col-2 .inner-col-2 {
+    width: 33.33%;
+}
+
+.filling-item .col-2 .inner-col-3 {
+    width: 33.33%;
+}
+
+.filling-item .item-num {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: #fbd03e;
+    text-align: center;
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 44px;
+    font-weight: normal;
+    color: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.filling-item .inner-col-2 h3 {
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #323d4a;
+    padding: 0 0 5px 0;
+}
+
+.filling-item .inner-col-2 p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #000000;
+    padding: 5px 0;
+}
+
+.filling-item .input-block {
+    width: 93%;
+}
+
+.filling-item .input-block label {
+    display: block;
+    padding: 5px 0 10px 0;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.filling-item .input-block label span {
+    font-weight: normal;
+    color: #8b8b8b;
+}
+
+.filling-item .input-block input {
+    display: block;
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    background: #ffffff;
+    margin: 5px 0;
+    padding: 11px 7%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.filling-item .col-2 .inner-col-2 .input-block {
+
+}
+
+.delivery-thumbnails {
+    overflow: hidden;
+}
+
+.delivery-thumbnails .inner {
+    width: 103%;
+    margin: 0 0 0 -1.5%;
+}
+
+.delivery-thumbnails .thumbnail {
+    margin: 11px 0;
+    padding: 0 1.5%;
+}
+
+.delivery-thumbnails .thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+
+.delivery-thumbnails .thumbnail .inner {
+    background: #ffffff;
+    padding: 31px 0 0 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.delivery-thumbnails .thumbnail .thumb-content {
+    margin: 19px 0 12px 0;
+}
+
+.delivery-thumbnails .thumbnail .img-box {
+    display: block;
+    height: 54px;
+    margin: 0 auto 27px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.delivery-thumbnails .thumbnail .img-box img {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+    max-width: 98%;
+    max-height: 98%;
+}
+
+.thumb-content .desc {
+    min-height: 56px;
+}
+
+.delivery-thumbnails .thumbnail .p-1 {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+.delivery-thumbnails .thumbnail p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+.delivery-thumbnails .thumbnail .price-box {
+    height: 45px;
+    padding: 6px 0;
+}
+
+.delivery-thumbnails .thumbnail p.price-p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #323d4a;
+    text-transform: uppercase;    
+}
+
+.delivery-thumbnails .thumbnail .price-box p.price-desc {
+    font-size: 12px;
+    line-height: 13px;
+    color: #a3a3a3;
+}
+
+.delivery-thumbnails .thumbnail .deliver-radio {
+    position: relative;
+}
+
+.deliver-radio input[type="radio"] {
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.deliver-radio label {
+    display: table;
+    height: 44px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #a4a4a4;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -ms-border-radius: 0 0 4px 4px;
+    -o-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.deliver-radio input[type="radio"] + label {
+    background: #81c632;
+}
+
+.deliver-radio input[type="radio"]:checked + label {
+    background: #fbd03e;
+}
+
+.deliver-radio input[type="radio"]:disabled + label {
+    background: #a4a4a4;
+}
+
+.deliver-radio label:before,
+.deliver-radio label:after {
+    display: table-cell;
+    vertical-align: middle;
+    content: "";
+    width: 1%;
+    height: 44px;
+}
+
+.deliver-radio label span {
+    /*display: table-cell;*/
+    display: none;
+    vertical-align: middle;
+    width: 98%;
+    padding: 5px 1%;
+    height: auto;
+    background: transparent;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.deliver-radio input[type="radio"] + label span.default {
+    display: table-cell;
+}
+
+.deliver-radio input[type="radio"]:checked + label span.choise {
+    display: table-cell;
+}
+
+.deliver-radio input[type="radio"]:checked + label span.default {
+    display: none;
+}
+
+.deliver-radio input[type="radio"]:disabled + label span.desabled {
+    display: table-cell;
+}
+
+.deliver-radio input[type="radio"]:disabled + label span.default {
+    display: none;
+}
+
+.delivery-info {
+    background: #ffffff;
+    margin: 20px 0;
+    position: relative;
+}
+
+.delivery-info .tab {
+    padding: 26px 3% 20px 3%;
+}
+
+.tab-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.delivery-info-header {
+
+}
+
+.delivery-info-header h3 {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #323d4a;
+    padding: 2px 0;
+}
+
+.delivery-info-header p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #8d8d8d;
+    padding: 2px 0;
+}
+
+.delivery-info .tab p { 
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #000000;
+    padding: 6px 0;
+}
+
+.delivery-info .tab  a {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #44b2e0;
+    text-decoration: none;
+}
+
+.delivery-info .tab  a:link,
+.delivery-info .tab  a:visired {
+    text-decoration: none;
+}
+
+
+.delivery-info .tab  a:hover {
+    text-decoration: underline;
+}
+
+.delivery-info .tab  a:hover {
+    text-decoration: underline;
+}
+
+.delivery-info .tab  a.hover {
+    text-decoration: underline;
+}
+
+.tab-form .input-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    margin: 5px 2% 5px 0;
+}
+
+.close-tab {
+    display: block;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    right: 2%;
+    background: transparent;
+    border: 3px solid #44b2e0;
+     -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.close-tab:after {
+    display: block;
+    content: "\2716";
+    width: 100%;
+    height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #44b2e0;
+}
+
+.payments-thumbnails  {
+
+}
+
+.payments-thumbnails-inner {
+    width: 103%;
+    margin: 0 0 0 -1.5%;
+}
+
+.payments-thumbnails .thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    padding: 12px 1%;
+    position: relative;
+}
+
+.payments-thumbnails .thumbnail input[type="radio"] {
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .01;
+}
+
+.payments-thumbnails .thumbnail .inner {
+    display: block;
+    min-height: 140px;
+    cursor: pointer;
+    background: #ffffff;
+    position: relative;
+    text-align: center;
+    padding: 10px 1%;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.payments-thumbnails .thumbnail input[type="radio"]:checked + .inner {
+    background: #323d4a;
+}
+
+.payments-thumbnails .thumbnail input[type="radio"]:checked + .inner p {
+    color: #ffffff;
+}
+
+.payments-thumbnails .thumbnail .inner label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.payments-thumbnails .thumbnail .inner .icon-box {
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin: 15px 0 14px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.payments-thumbnails .thumbnail .inner img {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.payments-thumbnails .thumbnail .inner p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+.payments-descript {
+    padding-top: 5px;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.submit-fill {
+    padding: 35px 0;
+}
+
+.reports-table {
+    margin: 8px 0 0 0;
+}
+
+.reports-table .table {
+    display: table;
+    width: 100%;
+    max-width: 250px;
+    border-collapse: collapse;
+}
+
+.reports-table .table-row {
+    display: table-row; 
+}
+
+.reports-table .table:last-child {
+    border-top: 1px solid #e5e5e5;
+    margin: 7px 0;
+}
+
+.reports-table .table:last-child .table-cell  {
+    padding: 7px 0;
+}
+
+.reports-table .table-cell {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.reports-table .cell-1 {
+    width: 60%;
+}
+
+.reports-table .cell-2 {
+    width: 40%;
+    text-align: right;
+}
+
+.reports-table p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+.reports-table p.bold {
+    font-weight: bold;
+}
+
+.filling-item .col-2 .textarea-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 66.66%;
+    /*padding-right: 2%;*/
+}
+
+.textarea-block textarea {
+    display: block;
+    width: 100%;
+    height: 80px;
+    max-width: 580px;
+    overflow: auto;
+    resize: none;
+    padding: 11px 3%;
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #000000;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.filling-item .col-2 .submit-btn-col {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    text-align: right;
+}
+
+.submit-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 280px;
+    cursor: pointer;
+    text-align: center;
+    background: #81c632;
+    padding: 16px 1%;
+    border: 1px solid transparent;
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: normal;
+    color: #ffffff;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: none;
+
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.submit-btn:link,
+.submit-btn:visited {
+    box-shadow: none;
+}
+
+.submit-btn.active,
+.submit-btn:active {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+    box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+}
+
+.submit-btn:hover {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+    box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+}
+
+
+/*-- /Section 1 Card Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
