@@ -706,6 +706,10 @@
 	    font-size: 22px;
 	}
 
+	.delivery-info .tab {
+	    min-height: auto;
+	}
+
 	.tab-form .input-block {
 	    width: 100%;
 	}
