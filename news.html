@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="vendors/js/select2.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	
+	<title>Рыбалка онлайн</title>
+	
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+
+	<!-- Header -->
+
+	<header>
+
+
+		<div class="header" id="desktop_header">
+			
+			<div class="top-row row-1">
+
+				<div class="row offset-ziro">
+					<div class="col col-1">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<a href="#" class="place">Москва</a>
+					</div>
+					<div class="col col-2">
+						<div class="top-nav-block">
+							<ul class="top-nav">
+								<li><a href="#">О магазине</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-3">
+						<div class="sign-in-block">
+							<ul class="sign-list">
+								<li><a href="#"><b>Войти</b></a></li>
+								<li><a href="#">Зарегистрироваться</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row-2">
+
+				<div class="row  offset-ziro">
+
+					<div class="col col-1">
+						<a href="index.html" class="logo">
+							<img src="img/logo.png" alt="" >
+						</a>
+					</div>
+					<div class="col col-2 offset-ziro">
+						<div class="col-2-row-1 offset-ziro">
+							<div class="col col-1">
+								<div class="tel-box">
+									<div class="tel-box-col tel-box-col-1">
+										<i class="tel-icon"></i>
+									</div>
+									<div class="tel-box-col tel-box-col-2">
+										<a href="tel:88129035350">8 (812) 903-53-50</a>
+										<a href="tel:88129035350">8 (812) 903-53-50</a>
+									</div>
+								</div>
+							</div>
+							<div class="col col-2">
+								<div class="search-box">
+									<form>
+										<input type="text" placeholder="Поиск по каталогу">
+										<button type="button" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+									</form>
+								</div>
+							</div>
+							<div class="col col-3 bascket-box">
+								<a href="#" class="bascket">
+									<div class="bascket-col bascket-col-1">
+										<i class="bascket-icon"></i>
+									</div>
+									<div class="bascket-col bascket-col-2">
+										<p><nobr>В корзине <span class="count-goods">0</span></nobr></p>
+										<p>0 <i class="fa fa-rub" aria-hidden="true"></i></p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-2-row-2 offset-ziro">
+							<div class="col col-1">
+								<div class="callback">
+									<i class="fa fa-phone" aria-hidden="true"></i>	
+									<a href="#">Заказать обратный звонок</a>
+								</div>
+							</div>
+							<div class="col col-2">
+								<p><b>Время работы:</b> ПН-ПТ: 10.00-20.00 прием заказов круглосуточно</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="resp-header">
+			
+			<div class="resp-header-top-row">
+
+				<div class="row offset-ziro">
+
+					<div class="col col-1">
+
+						<button type="button" class="respmenubtn">			
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+
+					</div>
+					<div class="col col-2">
+						<a href="index.html" class="resp-logo"><img src="img/logo_resp.png" alt=""></a>
+					</div>
+					<div class="col col-3">
+						<a href="#" class="bascket-link-resp">
+							<i class="bascket-icon"></i>
+							<p class="count-goods-circle"><span>3</span></p>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Responsive Navigation -->
+
+			<div class="resp-nav">
+
+				<button type="button" class="close-resp-nav-btn"></button>				
+
+				<div class="resp-nav-top-block">
+
+					<div class="search-block resp-search-block">
+						<div class="search-box">
+							<form>
+								<input type="text" placeholder="Поиск по каталогу">
+								<button type="button" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="scroll-box scroll">
+
+					<div>
+
+						<div class="resp-sidebar">
+							<ul>
+								<li><a href="catalog.html" >Удилища</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Катушка</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Приманки</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Зимняя рыбалка</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Оснастка</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Одежда и обувь</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Скидки</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Электроника</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a><li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Туризм</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Аксессуары</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Акции</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html" >Подарочные карты</a>
+									<ul>
+										<li><a href="catalog.html">Подменю 1</a></li>
+										<li><a href="catalog.html">Подменю 2</a>
+											<ul>
+												<li><a href="catalog.html">Подменю 1</a></li>
+												<li><a href="catalog.html">Подменю 2</a></li>
+												<li><a href="catalog.html">Подменю 3</a></li>
+												<li><a href="catalog.html">Подменю 4</a></li>
+												<li><a href="catalog.html">Подменю 5</a></li>
+											</ul>
+										</li>
+										<li><a href="catalog.html">Подменю 3</a></li>
+										<li><a href="catalog.html">Подменю 4</a></li>
+										<li><a href="catalog.html">Подменю 5</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="resp-tel-box">
+							<ul>
+								<li><i class="tel-icon"></i></li>
+								<li><a href="tel:88129035350">8 (812) 903-53-50</a></li>
+								<li><a href="tel:88129035350">8 (812) 903-53-50</a></li>
+							</ul>					
+						</div>
+
+						<div>
+							<ul class="top-nav top-nav-resp">
+								<li><a href="#">О магазине</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+
+						<div class="select-block">
+
+							<form>
+
+								<select data-placeholder = "Москва">
+									<option>Москва</option>
+									<option>Санкт Петербург</option>
+									<option>Кремль</option>
+									<option>Ростов на Дону</option>
+									<option>Калининград</option>
+								</select>
+
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- /Responsive Navigation -->	
+
+		</div>
+
+								
+	</header>
+
+	<!-- /Header -->
+
+		<!-- Content -->
+			<div class="content">
+
+			<!-- Section 1 News Page -->
+
+			<section class="padding-botom-ziro">
+
+				<div class="row">					
+
+					<div class="header-section">						
+
+						<div class="select-block big-select tab-hidden">
+							<select>
+								<option>Каталог товаров</option>
+								<option>Каталог 1</option>
+								<option>Каталог 2</option>
+								<option>Каталог 3</option>
+								<option>Каталог 4</option>
+								<option>Каталог 5</option>
+							</select>
+						</div>
+
+						<div class="breadcrumbs-block">
+							<ul class="breadcrumbs">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>					
+
+					</div>
+
+					<div class="articles-box">
+
+						<h2>Новости</h2>
+
+						<div class="inner">
+
+							<div class="two-cols-article clearfix">
+								
+								<div class="col-1 left">
+									<p>20 декабря 2016</p>
+								</div>
+
+								<div class="col-2 right">
+									<h3>Новогодние Скидки %</h3>
+									<p>Новогодние Скидки % Уважаемые посетители сайта Fishemania.ru. Наш интернет-магазин, предлагает вам большой ассортимент рыболовных и туристических принадлежностей, по сниженным ценам. Успейте оформить заказ до 27 декабря и порадовать себя и своих близких новогодним подарком.</p>
+								</div>
+
+							</div>
+
+							<div class="two-cols-article clearfix">
+								
+								<div class="col-1 left">
+									<p>23 ноября 2016</p>
+								</div>
+
+								<div class="col-2 right">
+									<h3>Зимние блесны по выгодной цене</h3>
+									<p>Уважаемые покупатели и гости сайта Фишемания. Наш магазин предлагает большой ассортимент приманок для зимней подледной ловли по привлекательной цене. Все что нужно это просто зарегистрироваться на нашем сайте при оформлении заказа. В акции представлены такие бренды как, LumiCom, Stinger, Nils Master, Rapala. Спешите сделать свой заказ. Все подробности акции узнавайте по телефону, или в онлайн консультанте.</p>
+								</div>
+
+							</div>
+
+							<div class="two-cols-article clearfix">
+								
+								<div class="col-1 left">
+									<p>23 ноября 2016</p>
+								</div>
+
+								<div class="col-2 right">
+									<h3>Скидки на Всю Зимнюю продукцию на сайте от 10%</h3>
+									<p>Интернет-магазин Фишемания предлагает всем покупателям и гостям сайта, сезонные скидки на категорию зимней экипировки, зимней оснастки (ящики, балансиры, мормышки, блесна, термоса). Оформите заказ на сайте на данную продукцию, и получите скидку от 10%. В акции участвуют все товара за исключением позиций, которые уже имеют доп. скидку (зачеркнутую цену). Если вы ранее делали заказ на нашем сайте и сумма покупок составляет более 15.000 тыс. рублей, то на определенные позиции вы можете получить скидку от 12% до 17%. Все подробности акции узнавайте по телефону, или в онлайн консультанте.</p>
+								</div>
+
+							</div>
+
+						</div>
+
+						<button type="button" class="load_more_btn" id="load">Показать еще</button>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- /Section 1 News Page -->
+
+			<!-- Section 6 Main Page -->
+				<section class="brands-section white-bg">
+
+					<div class="row">
+
+						<div class="h-block">
+							<h2 class="green-txt">Бренды</h2>
+							<a href="#" class="more-link blue">Все бренды</a>
+						</div>
+
+						<div class="brands-slider-box">
+
+							<div class="brands-slider" data-slider-name = "good_slider_1">
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_01.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Приманки</a></li>
+												<li><a href="#">Воблеры</a></li>
+												<li><a href="#">Силик-ые приманки</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_02.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Элементы оснастки</a></li>
+												<li><a href="#">Аксессуары</a></li>
+												<li><a href="#">Хранение и переноска</a></li>
+												<li><a href="#">Зимняя рыбалка</a></li>
+												<li><a href="#">Удилища</a></li>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Кормушки</a></li>
+												<li><a href="#">Ледобуры</a></li>
+												<li><a href="#">Ящики</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_03.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Безынерционные</a></li>
+												<li><a href="#">Мультипликаторные</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_04.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Спиннинги</a></li>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Удилища</a></li>
+												<li><a href="#">Леска</a></li>
+												<li><a href="#">Обувь</a></li>
+												<li><a href="#">Плетеный шнур</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_05.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Безынерционные</a></li>
+												<li><a href="#">Мультипликаторные</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_06.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Безынерционные</a></li>
+												<li><a href="#">Мультипликаторные</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_07.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Приманки</a></li>
+												<li><a href="#">Воблеры</a></li>
+												<li><a href="#">Силиконовые приманки</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_01.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Приманки</a></li>
+												<li><a href="#">Воблеры</a></li>
+												<li><a href="#">Силик-ые приманки</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_02.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Элементы оснастки</a></li>
+												<li><a href="#">Аксессуары</a></li>
+												<li><a href="#">Хранение и переноска</a></li>
+												<li><a href="#">Зимняя рыбалка</a></li>
+												<li><a href="#">Удилища</a></li>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Кормушки</a></li>
+												<li><a href="#">Ледобуры</a></li>
+												<li><a href="#">Ящики</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_03.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Безынерционные</a></li>
+												<li><a href="#">Мультипликаторные</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_04.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Спиннинги</a></li>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Удилища</a></li>
+												<li><a href="#">Леска</a></li>
+												<li><a href="#">Обувь</a></li>
+												<li><a href="#">Плетеный шнур</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_05.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Безынерционные</a></li>
+												<li><a href="#">Мультипликаторные</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_06.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Катушки</a></li>
+												<li><a href="#">Безынерционные</a></li>
+												<li><a href="#">Мультипликаторные</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="thumbnail brand-thumbnail">
+										<div class="img-box">
+											<img src="img/brands/img_07.jpg" alt="">
+										</div>
+										<div class="descript">
+											<ul>
+												<li><a href="#">Приманки</a></li>
+												<li><a href="#">Воблеры</a></li>
+												<li><a href="#">Силиконовые приманки</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- <div class="sl-pagination"> -->
+								<div class="goods-sl-pagination" data-slider-name = "good_slider_1">
+									<button class="prev-slide slide-arrow blue-arrow"></button>
+									<button class="next-slide slide-arrow blue-arrow"></button>
+								</div>
+							<!-- </div> -->
+
+						</div>
+
+
+					</div>
+
+				</section>
+			<!-- /Section 6 Main Page -->
+
+			</div>
+		<!-- /Content -->
+
+		<!-- Footer -->
+
+		<footer>
+			
+			<div class="footer">
+				
+				<div class="row clearfix">
+					
+					<div class="col col-1 footer-table">
+
+						<div class="table-row">
+
+							<div class="table-cell">
+								<div class="contact-box">
+									<h3>График работы</h3>
+									<p>Понедельник-пятница: 10.00-20.00<br> прием заказов круглосуточно</p>
+								</div>
+							</div>
+
+							<div class="table-cell">
+								<div class="contact-box">
+									<h3>Телефон для справок</h3>
+									<a href="tel:+78129035350" class="tel-link">+7 (812) 903-53-50</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="table-row">
+						
+							<div class="table-cell">
+
+								<div class="contact-box">
+									<h3>Адрес</h3>
+									<p>Санкт-Петербург, Московский пр-кт<br> д. 49. (Вход с ул. 7-я Красноармейская)</p>
+									<a href="#" class="blue-link">Показать на карте</a>
+								</div>
+
+								<p class="copiright">&copy; 2012-2017, «Рыбалка онлайн»</p>				
+							</div>
+
+							<div class="table-cell y-m">
+
+								<div class="contact-box">
+									<h3>E-mail (менеджер)</h3>
+									<a href="mailto:name@domain.ru" class="blue-link">name@domain.ru</a>
+								</div>
+
+								<div class="yandex-market">
+									<a href="#">
+										<img src="img/yand_market.jpg" alt="Яндекс Маркет">
+									</a>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col col-2 clearfix">
+
+						<div class="seo-txt-block">
+							<h3>Каталог</h3>
+							<ul class="seo-txt">
+								<li><a href="">Удилища</a></li>
+								<li><a href="">Катушки</a></li>
+								<li><a href="">Приманки</a></li>
+								<li><a href="">Зимняя рыбалка</a></li>
+								<li><a href="">Оснастка</a></li>
+								<li><a href="">Одежда и обувь</a></li>
+								<li><a href="">Электроника</a></li>
+								<li><a href="">Туризм</a></li>
+								<li><a href="">Аксессуары</a></li>
+							</ul>
+						</div>
+
+						<div class="seo-txt-block">
+							<h3>Сервис</h3>
+							<ul class="seo-txt">
+								<li><a href="">О магазине</a></li>
+								<li><a href="">Доставка</a></li>
+								<li><a href="">Оплата</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col col-3">
+						<h3>Оплата</h3>
+						<ul class="payments-systems clearfix">
+							<li><img src="img/payments/img_01.png" alt=""></li>
+							<li><img src="img/payments/img_02.png" alt=""></li>
+							<li><img src="img/payments/img_03.png" alt=""></li>
+							<li><img src="img/payments/img_04.png" alt=""></li>
+							<li><img src="img/payments/img_05.png" alt=""></li>
+							<li><img src="img/payments/img_06.png" alt=""></li>
+						</ul>
+
+						<div class="bottom-list">
+							<ul class="banks">
+								<li><img src="img/payments/img_07.png" alt=""></li>
+								<li><img src="img/payments/img_08.png" alt=""></li>
+								<li><img src="img/payments/img_09.png" alt=""></li>
+							</ul>
+						</div>
+
+					</div>					
+
+				</div>
+
+			</div>			
+
+		</footer>
+
+		<!-- /Footer -->
+
+		<script src="js/scripts.js"></script>
+
+		<script src="js/additional_scripts.js"></script>
+	
+	</div>
+
+</body>
+</html>

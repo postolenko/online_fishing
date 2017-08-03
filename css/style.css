@@ -221,6 +221,10 @@ section.padding-botom-ziro {
     padding-bottom: 0;
 }
 
+.white-bg {
+    background: #ffffff;
+}
+
 h1 {
 
 }
@@ -1087,15 +1091,27 @@ a:active {
 .resp-header {
     /*display: block;*/
     display: none;
-    width: 100%;    
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
     background: #ffffff;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .28);
+    -moz-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .28);
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .28);
+}
+
+.resp-header:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-image: url(../img/header_shape.png);
+    background-repeat: repeat-x;;
 }
 
 .resp-header-top-row {
@@ -4949,6 +4965,68 @@ h2 + .h2-descript {
 
 
 /*-- /Section 1 Card Page --*/
+
+/*-- Section 1 News Page --*/
+
+.articles-box {
+    margin: 50px 0;
+}
+
+.articles-box h2 {
+    text-align: left;
+    padding: 0;
+    line-height: 30px;
+}
+
+.two-cols-article {
+    padding: 29px 0 28px 0;
+    border-bottom: 1px solid #dbdedd;
+}
+
+/*.articles-box .two-cols-article:nth-child(1) {
+    padding: 10px 0 28px 0;
+}*/
+
+.two-cols-article .col-1 {
+    width: 24%;
+    padding: 13px 0;
+}
+
+.two-cols-article .col-2 {
+    width: 76%;
+    padding: 5px 0 5px 2%;
+}
+
+.two-cols-article .col-1 p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #323d4a;
+}
+
+.two-cols-article .col-2 h3 {
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+.two-cols-article  p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.load_more_btn {
+    margin: 41px 0 10px 26%;
+    max-width: 280px
+}
+
+/*-- /Section 1 News Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
