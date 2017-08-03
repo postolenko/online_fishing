@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1280px) {
 
-/*-- Header Site --*/
+	/*-- Header Site --*/
 
 	.row {
 		padding: 0 2%;
@@ -42,9 +42,9 @@
 	    width: 30%;
 	}
 
-/*-- /Header Site --*/
+	/*-- /Header Site --*/
 
-/*-- Section 1 Main Page --*/
+	/*-- Section 1 Main Page --*/
 
 	.promo-h-list {
 
@@ -54,7 +54,16 @@
 		width: 50%;
 	}
 
-/*-- /Section 1 Main Page --*/
+	/*-- /Section 1 Main Page --*/
+
+	/*-- Section 1 Contacts Page --*/
+
+	.contacts-thumbnails .thumbnail a.tel-link {
+		font-size: 26px;
+		line-height: 26px;
+	}
+
+	/*-- /Section 1 Contacts Page --*/
 
 }
 
@@ -219,6 +228,14 @@
 	}
 
 	 /*-- /Section 1 Card Page --*/
+
+	/*-- Section 1 Contacts Page --*/
+
+	.contacts-thumbnails .thumbnail {
+	    width: 50%;
+	}
+
+	/*-- /Section 1 Contacts Page --*/
 
 	/*-- Footer --*/
 
@@ -762,6 +779,22 @@
 	}
 
 	/*-- Section 1 News Page --*/
+
+	/*-- Section 1 Contacts Page --*/
+
+	.contacts-thumbnails .inner {
+		width: 100%;
+		margin: 0;
+	}
+
+	.contacts-thumbnails .thumbnail {
+	    display: inline-block;
+	    vertical-align: top;
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	/*-- Section 1 Contacts Page --*/
 
 }
 
