@@ -237,6 +237,18 @@
 
 	/*-- /Section 1 Contacts Page --*/
 
+	/*-- Section 2 Contacts Page --*/
+
+	.map-box {
+	    height: 420px;
+	}
+
+	.map-box #map {
+	    height: 420px;
+	}
+
+	/*-- /Section 2 Contacts Page --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -571,6 +583,19 @@
 	}
 
 	/*-- /Section 1 News Page --*/
+
+
+	/*-- Section 2 Contacts Page --*/
+
+	.map-box {
+	    height: 270px;
+	}
+
+	.map-box #map {
+	    height: 270px;
+	}
+
+	/*-- /Section 2 Contacts Page --*/
 
 }
 
