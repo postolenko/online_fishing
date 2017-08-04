@@ -323,6 +323,14 @@ a:active {
     display: block;
 }
 
+.blue-txt {
+    color: #44b2e0;
+}
+
+h2 .h-txt.blue-txt {
+    color: #44b2e0;
+}
+
 .h2-box h2 {
     text-align: left;
     padding: 20px 0 5px 0;
