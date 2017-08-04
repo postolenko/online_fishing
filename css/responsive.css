@@ -799,8 +799,8 @@
 	/*-- Section 1 News Page --*/
 
 	.load_more_btn {
-	    max-width: 84%;
-	    width: 84%;
+		max-width: 75%;
+		width: 75%;
 	}
 
 	/*-- Section 1 News Page --*/
@@ -883,7 +883,12 @@
 	/*-- Section 1 Catalog Page --*/
 
 	.catalog-thumbnails .good-thumbnail {
-	    width: 98%;
+	    width: 100%;
+	}
+
+	.load_more_btn {
+		max-width: 90%;
+		width: 90%;
 	}
 
 	/*-- /Section 1 Catalog Page --*/

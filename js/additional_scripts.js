@@ -242,6 +242,46 @@ $(document).ready(function() {
 
     }
 
+    // ------------------------------------------------
+
+    $(".rating").each(function() {
+
+		rateVal = +( $(this).attr("data-rate") );
+
+		$(this).rateYo({
+			starWidth: "18px",
+			spacing: "5px",
+		    normalFill: "#ebeef0",
+		    ratedFill: "#ffd44f",
+		    rating: rateVal,
+		    readOnly: true
+		  });
+
+	});
+
+	$(".rating-big-star").each(function() {
+
+		rateVal = +( $(this).attr("data-rate") );
+
+		$(this).rateYo({
+			starWidth: "22px",
+			spacing: "5px",
+		    normalFill: "#dadada",
+		    ratedFill: "#fbd03e",
+		    rating: rateVal,
+		    readOnly: true
+		  });
+
+	});
+
+	$(".add-rating").rateYo({
+		starWidth: "18px",
+		spacing: "5px",
+		normalFill: "#ebeef0",
+		ratedFill: "#ffd44f",
+		rating: rateVal
+	});
+
     // ------------------------------------------------	
 
 	function slick_slider() {
