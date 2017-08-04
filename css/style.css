@@ -5939,6 +5939,10 @@ h2 + .h2-descript {
     background: #449310;
 }
 
+.tabs-header .green-btn {
+    margin: 21px auto 13px auto;
+}
+
 .tabs-content-block {
 
 }

@@ -295,6 +295,12 @@ $(document).ready(function() {
 
     // ----------- /Delivery Thumbnils  --------------
 
+    // ----------- Tabs  --------------
+
+    
+
+    // ----------- /Tabs  --------------
+
     // ----------- Responsive Navigation  --------------
 
     $(function() {
