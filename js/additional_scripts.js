@@ -105,6 +105,40 @@ $(document).ready(function() {
 		  ]
 	});
 
+	$(".good-slider-3").not('.slick-initialized').slick({
+		dots: true,
+		arrows: true,
+		speed: 800,
+		slidesToShow: 4,
+		slidesToScroll: 2,
+		autoplay: true,
+		appendDots: $(".goods_sl_3 .inner"),
+		autoplaySpeed: 7000,
+		  responsive: [
+		    {
+		      breakpoint: 1200,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 840,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 510,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
+	});
+
 	$(".brands-slider").not('.slick-initialized').slick({
 		dots: false,
 		arrows: true,

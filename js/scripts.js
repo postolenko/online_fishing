@@ -297,7 +297,41 @@ $(document).ready(function() {
 
     // ----------- Tabs  --------------
 
-    
+    $(".tabs-nav label").click(function() {
+
+        if( $(this).hasClass("active") ) {
+
+            return true;
+
+        } else {
+
+            var parentTabsBlock = $(this).closest(".tabs-block");
+
+            var labelAttr = $(this).attr("for");
+
+            var tabNav = parentTabsBlock.find(".tabs-nav");
+
+            var tabNavLabels = tabNav.find("label");
+
+            tabNavLabels.each(function() {
+
+                if( $(this).hasClass("active") && $(".radio_mark[id = '"+ labelAttr +"'][type='radio']:checked") ) {
+
+                    $(this).removeClass("active");
+
+                } else if ($(this).attr("for") ==  labelAttr){
+
+                    $(this).addClass("active");
+
+                    $(".radio_mark[id = '"+ labelAttr +"'][type='radio']").click();
+
+                }
+
+            });
+
+        }
+
+    });
 
     // ----------- /Tabs  --------------
 

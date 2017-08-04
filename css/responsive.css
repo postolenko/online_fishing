@@ -65,6 +65,27 @@
 
 	/*-- /Section 1 Contacts Page --*/
 
+	/*-- Section 1 Card Page --*/
+
+	.card-content-two-cols .col-1 .inner-col-1 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.card-content-two-cols .col-1 .inner-col-2 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.good-photo-box {
+	    margin: 0 auto;
+		-webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, .1);
+		-moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, .1);
+		box-shadow: 0 4px 15px 7px rgba(0, 0, 0, .1);
+	}
+
+	/*-- /Section 1 Card Page --*/
+
 }
 
 
@@ -248,6 +269,20 @@
 	}
 
 	/*-- /Section 2 Contacts Page --*/
+
+	/*-- Section 1 Card Page --*/
+
+	.tabs-content-two-cols:before {
+	    display: none;
+	}
+
+	/*.tabs-content-two-cols .col-1,
+	.tabs-content-two-cols .col-2 {
+	    width: 100%;
+	    padding-right: 0;
+	}*/
+
+	/*-- /Section 1 Card Page --*/
 
 	/*-- Footer --*/
 

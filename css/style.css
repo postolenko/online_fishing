@@ -391,6 +391,15 @@ h2 .h-txt.blue-txt {
     border-radius: 50%;
 }
 
+.sl-pagination .blue-pagination .slick-dots li {
+    border: 1px solid #44b2e0;
+}
+
+.sl-pagination .blue-pagination .slick-dots li.slick-active {
+    background: rgba(68, 178, 224, 1);
+}
+
+
 /*-- /Slick Styles --*/
 
 /*-- Breadcrumbs --*/
@@ -5675,7 +5684,7 @@ h2 + .h2-descript {
 /*-- Section 2 Card Page --*/
 
 .tabs-block {
-
+    margin: 0 0 45px 0;
 }
 
 .tabs-nav-block {
@@ -5940,6 +5949,8 @@ h2 + .h2-descript {
 }
 
 .tabs-header .green-btn {
+    min-width: 100%;
+    max-width: 280px;
     margin: 21px auto 13px auto;
 }
 
@@ -6064,7 +6075,7 @@ h2 + .h2-descript {
     vertical-align: top;
 }
 
-.testimonial-row .col-1 {
+.testimonial-row .col.col-1 {
     width: 34px;
 }
 
@@ -6103,6 +6114,10 @@ h2 + .h2-descript {
     vertical-align: top;
     width: 50%;
     margin: 16px 0 0 0;
+}
+
+.tab-content.green-btn {
+    max-width: 280px;
 }
 
 .testimonial-form {
@@ -6243,9 +6258,12 @@ h2 + .h2-descript {
     text-align: right;
 }
 
-.green-btn {
+.testimonial-form .submit-row .col-2 .green-btn {
+    min-width: 100%;
+    max-width: 280px;
     margin: 10px 0;
 }
+
 
 /*-- /Section 2 Card Page --*/
 
