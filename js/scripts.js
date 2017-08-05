@@ -28,6 +28,8 @@ $(document).ready(function() {
 
     getRespFilter();
 
+    getAdaptivePositionElements();
+
     $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
@@ -47,6 +49,8 @@ $(document).ready(function() {
         getTabSideBar();
 
         getRespFilter();
+
+        getAdaptivePositionElements();
 
     });
 
@@ -202,7 +206,7 @@ $(document).ready(function() {
 
      });
 
-     $(this).keydown(function(eventObject){
+    $(this).keydown(function(eventObject){
 
         if (eventObject.which == 27) {
 
@@ -323,6 +327,13 @@ $(document).ready(function() {
 
                     $(this).addClass("active");
 
+                    if( bodyWidth <= 1024 && $(".input-tabs").is(":visible")) {
+
+                        var respTabInput = parentTabsBlock.find(".input-tabs");
+                        respTabInput.html($(this).html());
+
+                    }
+
                     $(".radio_mark[id = '"+ labelAttr +"'][type='radio']").click();
 
                 }
@@ -332,6 +343,96 @@ $(document).ready(function() {
         }
 
     });
+    
+
+    if( bodyWidth <= 1024 && $(".input-tabs").is(":visible")) {
+
+        $(".input-tabs").click(function(e) {
+
+            e.preventDefault();
+
+            var parentTabsBlock = $(this).closest(".tabs-block");
+
+            var fadeElem = parentTabsBlock.find(".tab-nav-list");
+
+            fadeElem.css({"display" : "table"});
+
+        });   
+
+        $(document).mouseup(function (e){
+
+            hide_element = $('.tabs-nav');
+
+            if (!hide_element.is(e.target)
+
+                && hide_element.has(e.target).length === 0) {
+
+                $(".tab-nav-list").fadeOut(300);
+            }
+
+        });
+
+        $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27) {
+
+               $(".tab-nav-list").fadeOut(300);
+
+            }
+
+        });
+
+    }
+
+
+
+
+    // $(".select-tabs option").click(function() {
+
+    //     console.log($(this).attr("value"));
+
+    // });
+
+    // $(".select-tabs").click(function() {
+
+    //     var selectTabOptions = $(this).find("option");
+
+    //     selectTabOptions.each(function() {
+
+    //         var optionValue = $(this).attr("value");
+
+    //         var indexOption = $(this).index();
+
+    //         $(".select2-results__options li:eq("+ indexOption  +")").attr("value", optionValue);
+
+    //     });
+
+    // });
+
+
+
+    // $(".select2-results__options li").click(function() {
+
+    //     var parentTabsBlock = $(this).closest(".tabs-block");
+
+    //     var attrValue =  $(this).attr("value");
+
+    //     var tabsNav = parentTabsBlock.find(".tabs-nav");
+
+    //     console.log( tabsNav );
+
+    //     tabsNav.each(function() {
+
+    //         if($(this).attr("for") == "tab_"+attrValue) {
+
+    //             $(this).click();
+
+    //         }
+
+    //     });
+
+    // });
+
 
     // ----------- /Tabs  --------------
 
@@ -481,6 +582,32 @@ $(document).ready(function() {
 
     }
 
+    function getAdaptivePositionElements() {
 
+        $(".append-elem").each(function() {
+
+            if( $(this).hasClass("desktop-position") ) {
+
+                var screenParam = parseInt( $(this).attr("data-min-screen") );
+
+                var indexElem = $(this).attr("data-append-descktop-elem");
+
+                if( bodyWidth <= screenParam ) {
+
+                    $("[data-append-elem = '"+ indexElem +"']").append($(this).children());
+
+                }
+
+                 if( bodyWidth > screenParam ) {
+
+                    $("[data-append-descktop-elem = '"+ indexElem +"']").append($("[data-append-elem = '"+ indexElem +"']").children());
+
+                }
+
+            }
+
+        });
+
+    }
 
 });

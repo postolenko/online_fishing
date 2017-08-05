@@ -1128,7 +1128,7 @@ h2 .h-txt.blue-txt {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 12;
     background: #ffffff;
     -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .28);
     -moz-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .28);
@@ -5211,6 +5211,14 @@ h2 + .h2-descript {
     min-height: 100%;
 }
 
+.good-photo-box img.desk-img {
+    display: block !important;
+}
+
+.good-photo-box img.resp-img {
+    display: none !important;
+}
+
 .card-block h2 {
     font-family: "Panton", Arial, Verdana, sans-serif;
     font-size: 30px;
@@ -5369,6 +5377,11 @@ h2 + .h2-descript {
     line-height: 0;
 }
 
+.card-content-two-cols .col.col-1,
+.card-content-two-cols .col.col-2 {
+    width: 50%;
+}
+
 .card-content-two-cols .col-1 .inner-col {
     display: inline-block;
     vertical-align: bottom;
@@ -5469,6 +5482,7 @@ h2 + .h2-descript {
 
 .testimonials-y-m {
     display: block;
+    max-width: 280px;
     background: #ffffff;
     padding: 16px 26px;
     background-image: url(../img/testimonials_y_m.jpg);
@@ -5707,8 +5721,48 @@ h2 + .h2-descript {
     overflow: hidden;
 }
 
+.input-field.input-tabs {
+    display: none;
+    padding: 14px 2% 14px 2%;
+    background-image: url(../img/arrow_bottom.png);
+    background-position: 98% center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #8d8d8d;
+
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.input-field.input-tabs:hover {
+    -webkit-box-shadow: 0 4px 11px 3px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 4px 11px 3px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 11px 3px rgba(0, 0, 0, .1);
+}
+
 .socials-col {
-    display: inline-table;
+    display: inline-block;
     vertical-align: top;
     width: 31%;
     overflow: hidden;
@@ -5720,6 +5774,29 @@ h2 + .h2-descript {
     display: inline-table;
     vertical-align: top;
     margin: 0 -3px 0 0;
+}
+
+.resp-tabs-header-row {
+
+}
+
+.resp-tabs-header-row .col-1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.resp-tabs-header-row .col-2 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    text-align: right;
+}
+
+.resp-tabs-header-row .col-2 button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 0;
 }
 
 .tabs-nav {
@@ -5767,17 +5844,20 @@ h2 + .h2-descript {
     color: #b5b5b5
 }
 
+.socials {
+    display: table;
+}
 
-.socials-col .col {
+.socials .col {
     display: table-cell;
     vertical-align: middle;
 }
 
-.socials-col .col-1 {
+.socials .col-1 {
     width: 80px;
 }
 
-.socials-col p {
+.socials p {
     font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
     font-size: 13px;
     line-height: 14px;
@@ -5785,7 +5865,7 @@ h2 + .h2-descript {
     color: #313c39;
 }
 
-.socials-col .col-2 {
+.socials .col-2 {
     width: auto;
     overflow: hidden;
 }
@@ -5879,12 +5959,13 @@ h2 + .h2-descript {
 .tabs-header .rating-box {
     display: inline-block;
     vertical-align: middle;
+    margin: 0 0 0 -5px;
 }
 
 .tabs-header h2 {
     display: inline-block;
     vertical-align: middle;
-    padding-left: 2%;
+    /*padding-left: 2%;*/
 }
 
 .green-btn {
@@ -6019,13 +6100,13 @@ h2 + .h2-descript {
     padding: 7px 0 11px 0;
 }
 
-.testimonial-header .col-1 {
+.testimonial-header .col.col-1 {
     display: inline-block;
     vertical-align: middle;
     width: 60%;
 }
 
-.testimonial-header .rating-box {
+.testimonial-header .col.rating-box {
     display: inline-block;
     vertical-align: middle;
     width: 40%;
@@ -6109,7 +6190,7 @@ h2 + .h2-descript {
     color: #aaacac;
 }
 
-.load_more_btn {
+.load-testimonials .load_more_btn {
     display: inline-block;
     vertical-align: top;
     width: 50%;
@@ -6249,11 +6330,11 @@ h2 + .h2-descript {
     vertical-align: middle;
 }
 
-.submit-row .col-1 {
+.submit-row .col.col-1 {
     width: 40%;
 }
 
-.submit-row .col-2 {
+.submit-row .col.col-2 {
     width: 60%;
     text-align: right;
 }
