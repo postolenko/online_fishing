@@ -4029,6 +4029,8 @@ h2 + .h2-descript {
 .choise-count .input-field {
     display: inline-block;
     vertical-align: top;
+    padding: 0 1%;
+    border: none;
 }
 
 .input-field.count-num {
