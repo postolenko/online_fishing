@@ -23,6 +23,7 @@
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	
 	<title>Рыбалка онлайн</title>
@@ -38,6 +39,7 @@
 	<!-- Header -->
 
 	<header>
+
 
 		<div class="header" id="desktop_header">
 			
@@ -463,51 +465,115 @@
 		<!-- Content -->
 			<div class="content">
 
-			<!-- Section 1 404 Page -->
+			<!-- Section 1 Cabinet Page -->
 
-				<section class="shape_1_bg">
+			<section class="padding-botom-ziro">
 
-					<div class="row">
+				<div class="row">					
 
-						<div class="header-section">
+					<div class="header-section">
 
-							<div class="select-block big-select tab-hidden">
-								<select>
-									<option>Каталог товаров</option>
-									<option>Каталог 1</option>
-									<option>Каталог 2</option>
-									<option>Каталог 3</option>
-									<option>Каталог 4</option>
-									<option>Каталог 5</option>
-								</select>
-							</div>
-
-							<div class="breadcrumbs-block">
-								<ul class="breadcrumbs">
-									<li><a href="#">Главная</a></li>
-									<li><a href="#">404</a></li>
-								</ul>
-							</div>				
-
+						<div class="select-block big-select tab-hidden">
+							<select>
+								<option>Каталог товаров</option>
+								<option>Каталог 1</option>
+								<option>Каталог 2</option>
+								<option>Каталог 3</option>
+								<option>Каталог 4</option>
+								<option>Каталог 5</option>
+							</select>
 						</div>
 
-						<div class="two-cols-404 clearfix">
-							<div class="col col-1 left">
-								<h2>Страницы не существует</h2>
+						<div class="breadcrumbs-block">
+							<ul class="breadcrumbs">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+							</ul>
+						</div>					
 
-								<p>Попробуйте вернуться на <a href="/">главную страницу</a> или воспользуйтесь каталогом.
+					</div>
+
+					<div class="h2-two-cols">
+
+						<h2>Личный кабинет</h2>
+
+						<div class="col-2 align-right">
+
+							<div class="pills-box">
+								<a href="#" class="transparent-pill">Редактировать профиль</a>
+								<a href="#" class="transparent-pill">Изменить пароль</a>
+								<a href="#" class="green-pill">Выйти</a>
 							</div>
-							<div class="col col-2 right">
-								<img class="logo-404" src="img/404_logo.png" alt="">
-								<h1 class="h-404">404...</h1>
-							</div>
+
 						</div>
 
 					</div>
 
-				</section>
+					<div class="two-cols-tab tabs-block private-tab clearfix">
+						
+						<div class="col col-1 left">
+							<ul class="tabs-nav">
+								<li><label for="tab_private_1" class="active">Личные данные</label></li>
+								<li><label for="tab_private_2">Мои заказы</label></li>
+							</ul>
+						</div>
 
-				<!-- /Section 1 404 Page -->
+						<div class="col col-2 right">
+							
+							<div class="tabs-content-block">
+
+								<div class="tab-box">
+
+									<input type="radio" class="radio_mark" name="private_tabs_1" id="tab_private_1" checked>
+									<div class="tab-content">
+										<div class="private-table">
+
+											<div class="table-row">
+												<div class="table-cell cell-1"><p>Имя</p></div>
+												<div class="table-cell cell-2"><p>Фамилия Имя Отчество</p></div>
+											</div>
+
+											<div class="table-row">
+												<div class="table-cell cell-1"><p>Почта</p></div>
+												<div class="table-cell cell-2"><p>mail@domain.ru</p></div>
+											</div>
+
+											<div class="table-row">
+												<div class="table-cell cell-1"><p>Телефон</p></div>
+												<div class="table-cell cell-2"><p>+7 (926) 000-00-00</p></div>
+											</div>
+
+											<div class="table-row">
+												<div class="table-cell cell-1"><p>Адрес доставки</p></div>
+												<div class="table-cell cell-2"><p>г. Санкт-Петербург, ул. Кулешова, 37, кв. 20</p></div>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="tab-box">
+
+									<input type="radio" class="radio_mark" name="private_tabs_1" id="tab_private_2">
+									<div class="tab-content">
+										<h1>Tab 2</h1>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- /Section 1 Cabinet Page -->
 
 			</div>
 		<!-- /Content -->

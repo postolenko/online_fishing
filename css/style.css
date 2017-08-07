@@ -5245,10 +5245,55 @@ h2 + .h2-descript {
     line-height: 18px;
     font-weight: 300;
     color: #313c39;
+    background: transparent;
     border: 1px solid #d7dada;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     border-radius: 16px;
+
+    -webkit-transition-property: background, box-shadow, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, box-shadow, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, box-shadow, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, box-shadow, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, box-shadow, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+a.transparent-pill:link,
+a.transparent-pill:visited {
+    background: transparent;
+    box-shadow: none;
+    color: #313c39;
+}
+
+a.transparent-pill.active,
+a.transparent-pill:active {
+    background: #81c632;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+    box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+}
+
+a.transparent-pill:hover {
+    background: #81c632;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
+    box-shadow: 0px 5px 20px 0px rgba(50, 61, 74, .2);
 }
 
 .green-pill {
@@ -7041,8 +7086,186 @@ ol li {
     color: #000000;
 }
 
-
 /*-- /Section 1 About Page --*/
+
+/*-- Section 2 About Page --*/
+
+.advantages-sect.about-page .advantages-thumbnail {
+    margin: 44px 0 47px 0;
+}
+
+/*-- /Section 2 About Page --*/
+
+/*-- Section 3 About Page --*/
+
+.parnters-section {
+    padding: 42px 0 47px 0;
+}
+
+.partners-slider-box {
+    position: relative;
+    padding: 41px 0 15px 0;
+}
+
+.partners-slider {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.partners-slider .slick-arrow {
+    z-index: -1;
+    opacity: .001;
+}
+
+.partner-thumbnail {
+    display: inline-block;
+    vertical-align: middle;
+    width: 230px;
+    position: relative;
+}
+
+.partner-thumbnail:after {
+    display: inline-block;
+    vertical-align: top;
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 22px;
+    right: 9px;
+    z-index: 2;
+    margin: -2px 0 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background: #c3c6c5;
+}
+
+.partner-thumbnail .img-box {
+    height: 65px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.partner-thumbnail .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*-- /Section 3 About Page --*/
+
+/*-- Section 1 Cabinet Page --*/
+
+.h2-two-cols .col-2.align-right {
+    text-align: right;
+}
+
+.two-cols-tab {
+
+}
+
+.two-cols-tab .col-1 {
+    width: 26%;
+}
+
+.two-cols-tab .col-2 {
+    width: 74%;
+}
+
+.private-tab {
+
+}
+
+.private-tab .tabs-nav {
+    display: block;
+    width: 90%;
+    margin: 0;
+}
+
+.private-tab .tabs-nav li {
+    display: block;
+    text-align: left;
+}
+
+.private-tab .tabs-nav li label {
+    display: block;
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 0;
+    font-weight: normal;
+    color: #323d4a;
+    border-bottom: 1px solid #dbdedd;
+}
+
+.private-tab .tabs-nav li:last-child label {
+    border-bottom: 1px solid transparent;
+}
+
+.private-tab .tabs-nav li label.active {
+    color: #93999d;
+}
+
+.private-tab .tabs-nav li label:after {
+    display: none;
+}
+
+.private-tab .tab-box {
+    background: #ffffff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.private-table {
+
+}
+
+.private-tab .tabs-block {
+    margin: 12px 0 45px 0;
+}
+
+.private-tab .tab-content {
+    padding: 31px 4% 33px 4%;
+}
+
+.private-table .table-row {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.private-table .table-cell {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.private-table .cell-1 {
+    width: 33%;
+}
+
+.private-table .cell-2 {
+    width: 67%;
+}
+
+.private-table .table-cell p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 0;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+
+/*-- /Section 1 Cabinet Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

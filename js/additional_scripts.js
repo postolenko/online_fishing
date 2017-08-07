@@ -139,6 +139,63 @@ $(document).ready(function() {
 		  ]
 	});
 
+	$(".partners-slider").not('.slick-initialized').slick({
+		dots: false,
+		arrows: true,
+		speed: 800,
+		slidesToShow: 5,
+		slidesToScroll: 2,
+		autoplay: true,
+		autoplaySpeed: 7000,
+		 responsive: [
+		    // {
+		    //   breakpoint: 1200,
+		    //   settings: {
+		    //     slidesToShow: 5,
+		    //     slidesToScroll: 2
+		    //   }
+		    // },
+		    {
+		      breakpoint: 1030,
+		      settings: {
+		        slidesToShow: 4,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 900,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 560,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 440,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        centerMode: true
+		      }
+		    },
+		    {
+		      breakpoint: 440,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        centerMode: false
+		      }
+		    }
+		  ]
+	});
+
+
 	$(".brands-slider").not('.slick-initialized').slick({
 		dots: false,
 		arrows: true,
@@ -278,6 +335,8 @@ $(document).ready(function() {
 
     // ------------------------------------------------
 
+
+
     $(".rating").each(function() {
 
 		rateVal = +( $(this).attr("data-rate") );
@@ -293,28 +352,36 @@ $(document).ready(function() {
 
 	});
 
-	$(".rating-big-star").each(function() {
+	if( $(".rating-big-star").length > 0 )  {
 
-		rateVal = +( $(this).attr("data-rate") );
+		$(".rating-big-star").each(function() {
 
-		$(this).rateYo({
-			starWidth: "22px",
+			rateVal = +( $(this).attr("data-rate") );
+
+			$(this).rateYo({
+				starWidth: "22px",
+				spacing: "5px",
+			    normalFill: "#dadada",
+			    ratedFill: "#fbd03e",
+			    rating: rateVal,
+			    readOnly: true
+			  });
+
+		});
+
+	}
+
+	if( $(".add-rating").length > 0 )  {
+
+		$(".add-rating").rateYo({
+			starWidth: "18px",
 			spacing: "5px",
-		    normalFill: "#dadada",
-		    ratedFill: "#fbd03e",
-		    rating: rateVal,
-		    readOnly: true
-		  });
+			normalFill: "#ebeef0",
+			ratedFill: "#ffd44f",
+			rating: rateVal
+		});
 
-	});
-
-	$(".add-rating").rateYo({
-		starWidth: "18px",
-		spacing: "5px",
-		normalFill: "#ebeef0",
-		ratedFill: "#ffd44f",
-		rating: rateVal
-	});
+	}
 
     // ------------------------------------------------	
 

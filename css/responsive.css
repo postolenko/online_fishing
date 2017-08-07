@@ -444,6 +444,24 @@
 	}
 
 	 /*-- .Section 1 About Page --*/
+
+	/*-- Section 1 Cabinet Page --*/
+
+	 .private-tab .tabs-nav {
+	 	display: block !important;
+		background: transparent !important;
+		border: 1px solid transparent !important;
+	 }
+
+	.two-cols-tab .col-1 {
+		width: 100%;
+	}
+
+	.two-cols-tab .col-2 {
+		width: 100%;
+	}
+
+	 /*-- /Section 1 Cabinet Page --*/
  
 	/*-- Footer --*/
 
@@ -829,6 +847,14 @@
 	}
 
 	 /*-- .Section 1 About Page --*/
+
+	 /*-- Section 1 Cabinet Page --*/
+
+	.h2-two-cols .col-2.align-right {
+	    text-align: left;
+	}
+
+	 /*-- /Section 1 Cabinet Page --*/
 
 	/*-- Footer --*/
 
@@ -1336,7 +1362,15 @@
 	    text-align: center;
 	}
 
-	 /*-- .Section 1 About Page --*/
+	/*-- /Section 1 About Page --*/
+
+	/*-- Section 2 About Page --*/
+
+	 .advantages-sect.about-page .advantages-thumbnail {
+	    margin: 5px 0 29px 0;
+	}
+
+	/*-- /Section 2 About Page --*/
 
 }
 
