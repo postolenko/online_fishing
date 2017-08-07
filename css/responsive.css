@@ -394,6 +394,29 @@
 	}
 
 	/*-- /Section 2 Delivery Page --*/
+
+	/*-- Section 1 404 Page --*/
+
+	.two-cols-404 .col-1 {
+	    width: 35%;
+	    padding-right: 2%;
+	}
+
+	.two-cols-404 .col-2 {
+	    width: 65%;
+	}
+
+	.h-404 {
+	    font-size: 200px;
+	    line-height: 200px;
+	}
+
+	.logo-404 {
+	    left: 149px;
+	    margin: -41px 0 0 0;
+	}
+
+	/*-- /Section 1 404 Page --*/
  
 	/*-- Footer --*/
 
@@ -724,6 +747,33 @@
 	}
 
 	/*-- /Section 2 Delivery Page --*/
+
+	/*-- Section 1 404 Page --*/
+
+	.two-cols-404 .col-1 {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.two-cols-404 .col-2 {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 404 Page --*/
+
+	/*-- Section 1 404 Page --*/
+
+	.h-404 {
+	    font-size: 190px;
+	    line-height: 190px;
+	}
+
+	.logo-404 {
+		left: 140px;
+		margin: -46px 0 0 0;
+	}
+
+	/*-- /Section 1 404 Page --*/
 
 	/*-- Footer --*/
 
@@ -1162,6 +1212,25 @@
 	}
 
 	/*-- /Section 1 Delivery Page --*/
+
+	/*-- Section 1 404 Page --*/
+
+	.two-cols-404 .col-2 {
+	    padding: 5px 0;
+	}
+
+	.h-404 {
+		font-size: 123px;
+		line-height: 133px;
+	}
+
+	.logo-404 {
+		left: 91px;
+		width: 43px;
+		margin: -28px 0 0 0;
+	}
+
+	/*-- /Section 1 404 Page --*/
 
 }
 

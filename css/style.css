@@ -6835,6 +6835,110 @@ ol li {
 
 /*-- /Section 1 Delivery Page --*/
 
+/*-- Section 1 404 Page --*/
+
+.two-cols-404 {
+
+}
+
+.two-cols-404 .col {
+
+}
+
+.two-cols-404 .col-1 {
+    width: 26%;
+    padding-right: 4%;
+}
+
+.two-cols-404 .col-2 {
+    width: 74%;
+    position: relative;
+}
+
+.two-cols-404 h2 {
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+    color: #323d4a;
+}
+
+.two-cols-404 p {
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #323d4a;
+    padding: 9px 0;
+}
+
+.two-cols-404 a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #44b2e0;
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #44b2e0;
+
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.two-cols-404 a:link,
+.two-cols-404 a:visited {
+    border-bottom: 1px solid #44b2e0;
+}
+
+.two-cols-404 a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.two-cols-404 a.active {
+    border-bottom: 1px solid transparent;
+}
+
+.two-cols-404 a:active {
+    border-bottom: 1px solid transparent;
+}
+
+.h-404 {
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 256px;
+    line-height: 256px;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+.logo-404 {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    margin: -29px 0 0 0;
+}
+
+/*-- /Section 1 404 Page --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
