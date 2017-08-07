@@ -856,6 +856,30 @@
 
 	 /*-- /Section 1 Cabinet Page --*/
 
+	 /*-- Section 1 Payment Page --*/
+
+	.two-cols-block .col-1 {
+		width: 100%;
+		float: none;
+		padding-right: 0;
+	}
+
+	.two-cols-block .col-2 {
+		width: 100%;
+		float: none;
+		padding-top: 15px;
+	}
+
+	.two-cols-block .col-1 h3 {
+	    padding-bottom: 13px;
+	}
+
+	.two-cols-block .col-1 p {
+	    padding-bottom: 11px;
+	}
+
+	 /*-- /Section 1 Payment Page --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -1035,6 +1059,27 @@
 	}
 
 	/*-- /Section 2 Product Page --*/
+
+	/*-- Section 1 Payment Page --*/
+
+	.num-item-col-1 {
+	    width: 37px;
+	}
+
+	.num-circle {
+	    width: 31px;
+	    height: 31px;
+	    font-size: 19px;
+	    line-height: 31px;
+	}
+
+	.num-item-col-2 h3 {
+	    font-size: 28px;
+	    line-height: 29px;
+	    padding: 2px 0;
+	}
+
+	/*-- /Section 1 Payment Page --*/
 
 }
 

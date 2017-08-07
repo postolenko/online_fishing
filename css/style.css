@@ -7165,6 +7165,10 @@ ol li {
     text-align: right;
 }
 
+.h2-two-cols.private-page .col-2 {
+    padding: 0 0 10px 0;
+}
+
 .two-cols-tab {
 
 }
@@ -7264,8 +7268,156 @@ ol li {
     color: #323d4a;
 }
 
-
 /*-- /Section 1 Cabinet Page --*/
+
+/*-- Section 1 Payment Page --*/
+
+.two-cols-block {
+    margin: 40px 0;
+}
+
+.two-cols-block .col {
+
+}
+
+.two-cols-block .col-1 {
+    width: 26%;
+    padding-right: 2%;
+}
+
+.two-cols-block .col-2 {
+    width: 74%;
+}
+
+.two-cols-block .col-1 h3 {
+    padding-bottom: 20px;
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+.two-cols-block .col-1 p {
+    padding-bottom: 27px;
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #323d4a;
+}
+
+.num-item {
+    display: table;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.num-item-col-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 63px;
+    padding-right: 2%;
+}
+
+.num-item-col-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+}
+
+.num-circle {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: #fbd03e;
+    text-align: center;
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 44px;
+    font-weight: normal;
+    color: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.num-item-col-2 {
+
+}
+
+.num-item-col-2 h3 {
+    font-family: "Panton", Arial, Verdana, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+    padding: 4px 0;
+    font-weight: normal;
+    color: #323d4a;
+}
+
+.num-item-col-2 p {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 0;
+    font-weight: 300;
+    color: #000000;
+}
+
+.payment-way {
+
+}
+
+.payment-way li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.payment-way-item {
+    display: inline-table;
+    vertical-align: top;
+    height: 60px;
+    min-width: 130px;
+    margin: 9px 10px 9px 0;
+    position: relative;
+    border: 1px solid #d7dada;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.payment-way li:before,
+.payment-way li:after {
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;
+}
+
+.payment-way-item span {
+    display: table-cell;
+    vertical-align: middle;
+    width: 98%;
+    padding: 2px 15px;
+    text-align: center;
+
+}
+
+.payment-way-item img {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    max-width: 98%;
+    max-height: 98%;
+}
+
+
+
+/*-- /Section 1 Payment Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
