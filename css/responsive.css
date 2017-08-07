@@ -417,6 +417,33 @@
 	}
 
 	/*-- /Section 1 404 Page --*/
+
+	/*-- Section 1 About Page --*/
+
+	 .about-two-cols .col-1 {
+	    width: 36%;
+	    padding-right: 3%;
+	}
+
+	.about-two-cols .col-2 {
+	    width: 64%;
+
+	}
+
+	.about-thumbnails {
+	    padding: 16px 1%;
+	}
+
+	.about-thumbnails .thumbnail {
+	    width: 100%;
+	    padding: 6px 2%;
+	}
+
+	.about-thumbnails:after {
+	    display: none;
+	}
+
+	 /*-- .Section 1 About Page --*/
  
 	/*-- Footer --*/
 
@@ -774,6 +801,34 @@
 	}
 
 	/*-- /Section 1 404 Page --*/
+
+	/*-- Section 1 About Page --*/
+
+	 .about-two-cols .col-1 {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.about-two-cols .col-2 {
+	    width: 100%;
+	}
+
+	.about-thumbnails {
+		margin: 20px 0;
+	    padding: 16px 1%;
+	}
+
+	.about-thumbnails .thumbnail {
+	    width: 100%;
+	    padding: 10px 2% 10px 0;
+	}
+
+	.about-thumbnails .thumbnail .col-1 {
+	    width: 96px;
+	    text-align: center;
+	}
+
+	 /*-- .Section 1 About Page --*/
 
 	/*-- Footer --*/
 
@@ -1236,6 +1291,11 @@
 
 @media only screen and (max-width: 380px) {
 
+	h2 {
+	    font-size: 30px;
+	    line-height: 37px;
+	}
+
 	.card-table-row .cell-1 {
 	    width: 100%;
 	}
@@ -1251,6 +1311,32 @@
 	.card-table-row .cell-2 .cell {
 	    padding: 6px 1%;
 	}
+
+	/*-- Section 1 About Page --*/
+
+	.about-thumbnails .thumbnail {
+		display: block;
+		padding: 27px 2%;
+		border-bottom: 1px solid #efefef;
+	}
+
+	.about-thumbnails .thumbnail:last-child {
+		border-bottom: none;
+	}
+
+	.about-thumbnails .thumbnail .col-1 {
+		display: block;
+	    width: 100%;
+	    padding-bottom: 20px;
+	}
+
+	.about-thumbnails .thumbnail .col-2 {
+		display: block;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	 /*-- .Section 1 About Page --*/
 
 }
 
