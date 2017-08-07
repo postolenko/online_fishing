@@ -822,6 +822,10 @@
 
 	/*-- Section 1 About Page --*/
 
+	.two-cols-block {
+	    margin: 26px 0;
+	}
+
 	 .about-two-cols .col-1 {
 	    width: 100%;
 	    padding-right: 0;
@@ -846,17 +850,17 @@
 	    text-align: center;
 	}
 
-	 /*-- .Section 1 About Page --*/
+	/*-- .Section 1 About Page --*/
 
-	 /*-- Section 1 Cabinet Page --*/
+	/*-- Section 1 Cabinet Page --*/
 
 	.h2-two-cols .col-2.align-right {
 	    text-align: left;
 	}
 
-	 /*-- /Section 1 Cabinet Page --*/
+	/*-- /Section 1 Cabinet Page --*/
 
-	 /*-- Section 1 Payment Page --*/
+	/*-- Section 1 Payment Page --*/
 
 	.two-cols-block .col-1 {
 		width: 100%;
@@ -876,9 +880,10 @@
 
 	.two-cols-block .col-1 p {
 	    padding-bottom: 11px;
+	    font-size: 15px;
 	}
 
-	 /*-- /Section 1 Payment Page --*/
+	/*-- /Section 1 Payment Page --*/
 
 	/*-- Footer --*/
 
@@ -1078,9 +1083,15 @@
 	}
 
 	.num-item-col-2 h3 {
-	    font-size: 22px;
-	    line-height: 22px;
+	    font-size: 23px;
+	    line-height: 23px;
 	    padding: 2px 0 5px 0;
+	}
+
+	.num-item-col-2 p {
+		font-size: 16px;
+	    line-height: 20px;
+	    font-weight: normal;
 	}
 
 	/*-- /Section 1 Payment Page --*/
