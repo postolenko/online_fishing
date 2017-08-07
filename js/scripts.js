@@ -20,6 +20,29 @@ $(document).ready(function() {
 
     // ----------------------------
 
+    var parentIntem;
+
+    // ----------------------------
+
+    var sliddingBox;
+    var indexSliddingBlock;
+
+    // ----------------------------
+
+    var parentIntem;
+
+    // ----------------------------
+
+    var parentTabsBlock;
+    var parentTabsBlockIndex;
+    var labelAttr;
+
+    // ----------------------------
+
+
+
+    // ----------------------------
+
     getFooterPosition();
 
     getSingleSectionHeight();
@@ -81,7 +104,7 @@ $(document).ready(function() {
 
     $(function () {
 
-        var parentIntem;
+        // var parentIntem;
        
         $(".sidebar ul li").each(function() {
 
@@ -105,8 +128,8 @@ $(document).ready(function() {
 
     $(function() {
 
-        var sliddingBox;
-        var indexSliddingBlock;
+        // var sliddingBox;
+        // var indexSliddingBlock;
 
 
         $(".slidding-block").each(function() {
@@ -176,7 +199,7 @@ $(document).ready(function() {
 
      $(".resp-sidebar ul li .show-inner-nav").click(function() {
 
-        var parentIntem = $(this).closest("li");           
+        parentIntem = $(this).closest("li");           
 
         if(parentIntem.children("ul").is(":hidden")) {
 
@@ -307,9 +330,9 @@ $(document).ready(function() {
 
     $(".tabs-nav label").each(function() {
 
-        var parentTabsBlock = $(this).closest(".tabs-block");
-        var parentTabsBlockIndex = parentTabsBlock.index(".tabs-block");
-        var labelAttr = $(this).attr("for");
+        parentTabsBlock = $(this).closest(".tabs-block");
+        parentTabsBlockIndex = parentTabsBlock.index(".tabs-block");
+        labelAttr = $(this).attr("for");
 
         if ( $(".tabs-block:eq("+ parentTabsBlockIndex +") .radio_mark[id = '"+ labelAttr +"']").is(":checked") ){
 
