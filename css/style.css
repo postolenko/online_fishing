@@ -3757,7 +3757,7 @@ h2 + .h2-descript {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 14;
     background: #ffffff;
 }
 

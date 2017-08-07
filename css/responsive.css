@@ -1281,6 +1281,11 @@
 		width: 75%;
 	}
 
+	.load_more_btn.load-news {
+	    margin: 41px auto 10px auto;
+	    max-width: 280px;
+	}
+
 	/*-- /Section 1 News Page --*/
 
 	/*-- Section 1 Contacts Page --*/

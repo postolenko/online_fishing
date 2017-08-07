@@ -390,7 +390,7 @@ $(document).ready(function() {
 
     if( bodyWidth <= 1024 && $(".input-tabs").is(":visible")) {
 
-        $(".input-tabs").click(function(e) {
+        $(".tabs-active-item").click(function(e) {
 
             e.preventDefault();
 
