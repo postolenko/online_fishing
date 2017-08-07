@@ -1062,6 +1062,10 @@
 
 	/*-- Section 1 Payment Page --*/
 
+	.num-item {
+	    margin: 0 0 16px 0;
+	}
+
 	.num-item-col-1 {
 	    width: 37px;
 	}
@@ -1074,9 +1078,9 @@
 	}
 
 	.num-item-col-2 h3 {
-	    font-size: 28px;
-	    line-height: 29px;
-	    padding: 2px 0;
+	    font-size: 22px;
+	    line-height: 22px;
+	    padding: 2px 0 5px 0;
 	}
 
 	/*-- /Section 1 Payment Page --*/
