@@ -22,6 +22,8 @@ $(document).ready(function() {
 
     getFooterPosition();
 
+    getSingleSectionHeight();
+
     getHshapeWidth();
 
     getTabSideBar();
@@ -41,6 +43,8 @@ $(document).ready(function() {
         bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
         // -----------------------------
+
+        getSingleSectionHeight();
 
         getHshapeWidth();
 
@@ -301,6 +305,22 @@ $(document).ready(function() {
 
     // ----------- Tabs  --------------
 
+    $(".tabs-nav label").each(function() {
+
+        var parentTabsBlock = $(this).closest(".tabs-block");
+        var parentTabsBlockIndex = parentTabsBlock.index(".tabs-block");
+        var labelAttr = $(this).attr("for");
+
+        if ( $(".tabs-block:eq("+ parentTabsBlockIndex +") .radio_mark[id = '"+ labelAttr +"']").is(":checked") ){
+
+            $(".tabs-block:eq("+ parentTabsBlockIndex +") label[for = '"+ labelAttr +"']").addClass("active");
+
+            $(".tabs-block:eq("+ parentTabsBlockIndex +") .radio_mark[id = '"+ labelAttr +"']").click();
+
+        }
+
+    });
+
     $(".tabs-nav label").click(function() {
 
         if( $(this).hasClass("active") ) {
@@ -385,55 +405,6 @@ $(document).ready(function() {
     }
 
 
-
-
-    // $(".select-tabs option").click(function() {
-
-    //     console.log($(this).attr("value"));
-
-    // });
-
-    // $(".select-tabs").click(function() {
-
-    //     var selectTabOptions = $(this).find("option");
-
-    //     selectTabOptions.each(function() {
-
-    //         var optionValue = $(this).attr("value");
-
-    //         var indexOption = $(this).index();
-
-    //         $(".select2-results__options li:eq("+ indexOption  +")").attr("value", optionValue);
-
-    //     });
-
-    // });
-
-
-
-    // $(".select2-results__options li").click(function() {
-
-    //     var parentTabsBlock = $(this).closest(".tabs-block");
-
-    //     var attrValue =  $(this).attr("value");
-
-    //     var tabsNav = parentTabsBlock.find(".tabs-nav");
-
-    //     console.log( tabsNav );
-
-    //     tabsNav.each(function() {
-
-    //         if($(this).attr("for") == "tab_"+attrValue) {
-
-    //             $(this).click();
-
-    //         }
-
-    //     });
-
-    // });
-
-
     // ----------- /Tabs  --------------
 
     // ----------- Responsive Navigation  --------------
@@ -505,6 +476,27 @@ $(document).ready(function() {
             }
 
         }, 35);
+
+    }
+
+
+    function getSingleSectionHeight() {
+
+        var sectionHeight;
+
+        if($(".content section").length <= 1 ) {
+
+            if(bodyWidth > 768) {
+
+                sectionHeight = $(window).height() - $(".header-site").height() - $(".footer").height();
+
+            }
+
+            $(".content section:eq("+ 0 +")").css({
+                "min-height" : sectionHeight + "px"
+            });
+
+        }
 
     }
 
