@@ -5,3 +5,4 @@
 # http://postolenko.github.io/online_fishing/news.html
 # http://postolenko.github.io/online_fishing/contacts.html
 # http://postolenko.github.io/online_fishing/product.html
+# http://postolenko.github.io/online_fishing/dostavka.html

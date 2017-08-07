@@ -362,6 +362,38 @@
 	}
 
 	/*-- /Section 2 Product Page --*/
+
+	/*-- Section 1 Delivery Page --*/
+
+	.delivery-thumbnails_2 .delivery-thumbnail .inner-item {
+		display: block;
+	}
+
+	.delivery-thumbnails_2 .delivery-thumbnail .inner-item-col-1 {
+	    display: block;
+	    width: 100%;
+	    padding-top: 11px;
+	}
+
+	.delivery-thumbnails_2 .delivery-thumbnail .inner-item-col-2 {
+	    display: block;
+	    width: 100%;
+	}
+
+	/*-- /Section 1 Delivery Page --*/
+
+	/*-- Section 2 Delivery Page --*/
+
+	.two-cols-item .col-1 {
+	    width: 100%;
+	    padding-top: 21px;
+	}
+
+	.two-cols-item .col-2 {
+	    width: 100%;
+	}
+
+	/*-- /Section 2 Delivery Page --*/
  
 	/*-- Footer --*/
 
@@ -634,6 +666,64 @@
 	}
 
 	 /*-- /Section 2 Product Page --*/
+
+
+	/*-- Section 1 Delivery Page --*/
+
+	.h2-two-cols {
+	    display: block;
+	    margin: 10px 0 2px 0;
+	}
+
+	.h2-two-cols h2 {
+	    display: block;
+	    width: auto;
+	}
+
+	.h2-two-cols .col-2 {
+		display: block;
+	    padding-top: 0;
+	}
+
+	.delivery-thumbnails_2 .delivery-thumbnail {
+		display: block;
+		width: 100%;
+	}
+
+	.delivery-thumbnails_2 .delivery-thumbnail .inner-item {
+		display: table;
+	}
+
+	.delivery-thumbnails_2 .delivery-thumbnail .inner-item-col-1 {
+	    display: table-cell;
+	    width: 111px;
+	    padding-top: 11px;
+	}
+
+	.delivery-thumbnails_2 .delivery-thumbnail .inner-item-col-2 {
+	    display: table-cell;
+	    width: auto;
+	}	
+
+	.delivery-company-thumbnails .thumbnail {
+	    width: 50%;
+	}
+
+	/*-- /Section 1 Delivery Page --*/
+
+	/*-- Section 2 Delivery Page --*/
+
+	.two-cols-content .col-1 {
+	    width: 100%;
+	    padding-right: 0%;
+	}
+
+	.two-cols-content .col-2 {
+	    width: 100%;
+	    padding-left: 0%;
+	}
+
+	/*-- /Section 2 Delivery Page --*/
 
 	/*-- Footer --*/
 
@@ -1021,7 +1111,7 @@
 		width: 75%;
 	}
 
-	/*-- Section 1 News Page --*/
+	/*-- /Section 1 News Page --*/
 
 	/*-- Section 1 Contacts Page --*/
 
@@ -1037,7 +1127,41 @@
 	    padding: 10px 0;
 	}
 
-	/*-- Section 1 Contacts Page --*/
+	/*-- /Section 1 Contacts Page --*/
+
+	/*-- Section 1 Delivery Page --*/
+
+	.delivery-thumbnails_2 .delivery-thumbnail .col-1,
+	.delivery-thumbnails_2 .delivery-thumbnail .col-2 {
+		display: block;
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.attentive-box {
+	    margin: 46px 0 17px 0;
+	}
+
+	.delivery-thumbnails_2 .delivery-thumbnail .inner-item {
+		display: block;
+	}
+
+	.delivery-thumbnails_2 .delivery-thumbnail .inner-item-col-1 {
+	    display: block;
+	    width: 100%;
+	    padding-top: 11px;
+	}
+
+	.delivery-thumbnails_2 .delivery-thumbnail .inner-item-col-2 {
+	    display: block;
+	    width: 100%;
+	}
+
+	.delivery-company-thumbnails .thumbnail {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 Delivery Page --*/
 
 }
 
