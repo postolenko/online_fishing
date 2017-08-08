@@ -1,0 +1,85 @@
+
+/*-- Popups --*/
+
+.popups-section {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 13;
+}
+
+.popup-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 50, 70, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.center-block {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.center-block:before,
+.center-block:after {
+    display: table-cell;
+    vertical-align: middle;
+    content: "";
+    width: 1%;
+}
+
+.center {
+    display: table-cell;
+    vertical-align: middle;
+    width: 98%;
+    text-align: center;
+}
+
+.popup {
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    max-width: 540px;
+    margin: 20px 0;
+    padding: 19px 2%;
+    position: relative;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 2px 46px 0px rgba(68, 178, 224, 0.2);
+    -moz-box-shadow: 0px 2px 46px 0px rgba(68, 178, 224, 0.2);
+    -ms-box-shadow: 0px 2px 46px 0px rgba(68, 178, 224, 0.2);
+    box-shadow: 0px 2px 46px 0px rgba(68, 178, 224, 0.2);
+}
+
+.close-popup {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+.popup h4 {
+    font-family: "Museo Sans Cyrl", Arial, Verdana, sans-serif;
+    font-size: 25px;
+    line-height: 32px;
+    padding: 10px 0;
+    font-weight: normal;
+    color: #3d3d3d;
+}
+
+/*-- /Popups --*/
+
+
