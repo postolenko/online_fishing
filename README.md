@@ -9,4 +9,5 @@
 # http://postolenko.github.io/online_fishing/about.html
 # http://postolenko.github.io/online_fishing/cabinet.html
 # http://postolenko.github.io/online_fishing/oplata.html
+# http://postolenko.github.io/online_fishing/popup.html
 # http://postolenko.github.io/online_fishing/404.html
